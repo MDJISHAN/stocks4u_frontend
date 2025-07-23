@@ -1,0 +1,576 @@
+/* Modal specific container */
+.signin-modal-container {
+  display: flex;
+  width: 900px;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+/* LEFT SIDE - Purple Background with Graphics */
+.signin-modal-left {
+  flex: 1;
+  background: linear-gradient(135deg, #8B5CF6 0%, #6D28D9 50%, #4C1D95 100%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+/* Floating dots animation */
+.modal-floating-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.modal-dot {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  animation: modalFloat 6s ease-in-out infinite;
+}
+
+.modal-dot-1 {
+  width: 6px;
+  height: 6px;
+  top: 15%;
+  left: 15%;
+  animation-delay: -1s;
+}
+
+.modal-dot-2 {
+  width: 8px;
+  height: 8px;
+  top: 25%;
+  right: 20%;
+  animation-delay: -2s;
+}
+
+.modal-dot-3 {
+  width: 4px;
+  height: 4px;
+  top: 60%;
+  left: 10%;
+  animation-delay: -3s;
+}
+
+.modal-dot-4 {
+  width: 7px;
+  height: 7px;
+  bottom: 30%;
+  right: 15%;
+  animation-delay: -4s;
+}
+
+.modal-dot-5 {
+  width: 10px;
+  height: 10px;
+  bottom: 15%;
+  left: 25%;
+  animation-delay: -5s;
+}
+
+@keyframes modalFloat {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(180deg); }
+}
+
+/* Main graphic container */
+.modal-graphics-container {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-main-graphic {
+  position: relative;
+  width: 250px;
+  height: 200px;
+}
+
+/* Laptop 3D design */
+.modal-laptop-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  perspective: 1000px;
+}
+
+.modal-laptop {
+  width: 160px;
+  height: 110px;
+  position: relative;
+  transform: rotateX(10deg) rotateY(-15deg);
+  animation: modalLaptopFloat 4s ease-in-out infinite;
+}
+
+.modal-laptop-screen {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1F2937 0%, #111827 100%);
+  border-radius: 10px;
+  position: relative;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.modal-chart-line {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(90deg, #10B981, #34D399);
+  border-radius: 2px;
+  animation: modalChartGrow 3s ease-in-out infinite;
+}
+
+.modal-chart-line::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 20%;
+  width: 60%;
+  height: 2px;
+  background: linear-gradient(90deg, #F59E0B, #FBBF24);
+  border-radius: 2px;
+  animation: modalChartGrow 3s ease-in-out infinite 0.5s;
+}
+
+.modal-chart-bars {
+  position: absolute;
+  bottom: 20%;
+  left: 15%;
+  display: flex;
+  gap: 6px;
+  align-items: flex-end;
+}
+
+.modal-bar {
+  width: 8px;
+  background: linear-gradient(180deg, #8B5CF6, #6D28D9);
+  border-radius: 2px;
+  animation: modalBarGrow 2s ease-in-out infinite;
+}
+
+.modal-bar-1 {
+  height: 15px;
+  animation-delay: 0s;
+}
+
+.modal-bar-2 {
+  height: 22px;
+  animation-delay: 0.5s;
+}
+
+.modal-bar-3 {
+  height: 12px;
+  animation-delay: 1s;
+}
+
+@keyframes modalLaptopFloat {
+  0%, 100% { transform: rotateX(10deg) rotateY(-15deg) translateY(0px); }
+  50% { transform: rotateX(10deg) rotateY(-15deg) translateY(-8px); }
+}
+
+@keyframes modalChartGrow {
+  0%, 100% { transform: scaleX(0.8); }
+  50% { transform: scaleX(1.1); }
+}
+
+@keyframes modalBarGrow {
+  0%, 100% { transform: scaleY(0.8); }
+  50% { transform: scaleY(1.2); }
+}
+
+/* Geometric shapes */
+.modal-geometric-shapes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-shape {
+  position: absolute;
+  opacity: 0.3;
+  animation: modalShapeFloat 8s ease-in-out infinite;
+}
+
+.modal-shape-1 {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(45deg, #F59E0B, #FBBF24);
+  border-radius: 50%;
+  top: 10%;
+  right: 10%;
+  animation-delay: -2s;
+}
+
+.modal-shape-2 {
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(45deg, #10B981, #34D399);
+  transform: rotate(45deg);
+  bottom: 20%;
+  left: 20%;
+  animation-delay: -4s;
+}
+
+.modal-shape-3 {
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(45deg, #EF4444, #F87171);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  top: 30%;
+  left: 5%;
+  animation-delay: -6s;
+}
+
+@keyframes modalShapeFloat {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33% { transform: translateY(-12px) rotate(120deg); }
+  66% { transform: translateY(-4px) rotate(240deg); }
+}
+
+/* Content text */
+.modal-content-text {
+  text-align: center;
+  color: white;
+  z-index: 10;
+  max-width: 300px;
+}
+
+.modal-content-text h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  line-height: 1.2;
+}
+
+.modal-content-text p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* RIGHT SIDE - Sign In Form */
+.signin-modal-right {
+  flex: 1;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.modal-form-container {
+  width: 100%;
+  max-width: 320px;
+}
+
+/* Logo */
+.modal-logo-container {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.modal-logo-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #8B5CF6, #6D28D9);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+}
+
+.modal-logo-shape {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 5px;
+  position: relative;
+}
+
+.modal-logo-shape::before,
+.modal-logo-shape::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #8B5CF6;
+  border-radius: 50%;
+}
+
+.modal-logo-shape::before {
+  top: 3px;
+  left: 3px;
+}
+
+.modal-logo-shape::after {
+  bottom: 3px;
+  right: 3px;
+}
+
+/* Form header */
+.modal-form-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.modal-form-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1F2937;
+  margin-bottom: 0.5rem;
+}
+
+/* Form styles */
+.modal-signin-form {
+  width: 100%;
+}
+
+.modal-form-group {
+  margin-bottom: 1.2rem;
+}
+
+.modal-form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #E5E7EB;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+  color: #1F2937;
+}
+
+.modal-form-input:focus {
+  outline: none;
+  border-color: #8B5CF6;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+}
+
+.modal-form-input::placeholder {
+  color: #9CA3AF;
+}
+
+/* Form options */
+.modal-form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.modal-checkbox-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: #6B7280;
+}
+
+.modal-checkbox-container input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+}
+
+.modal-checkmark {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #D1D5DB;
+  border-radius: 4px;
+  margin-right: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.modal-checkbox-container input[type="checkbox"]:checked + .modal-checkmark {
+  background: #8B5CF6;
+  border-color: #8B5CF6;
+}
+
+.modal-checkbox-container input[type="checkbox"]:checked + .modal-checkmark::after {
+  content: '✓';
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.modal-forgot-password {
+  color: #8B5CF6;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.modal-forgot-password:hover {
+  color: #6D28D9;
+}
+
+/* Sign in button */
+.modal-signin-button {
+  width: 100%;
+  padding: 0.75rem;
+  background: linear-gradient(135deg, #8B5CF6, #6D28D9);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+}
+
+.modal-signin-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
+}
+
+.modal-signin-button:active {
+  transform: translateY(0);
+}
+
+.modal-signin-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.modal-signin-button:disabled:hover {
+  transform: none;
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+}
+
+.modal-error-message {
+  background: rgba(239, 68, 68, 0.1);
+  color: #EF4444;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Signup link */
+.modal-signup-link {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.modal-signup-link p {
+  color: #6B7280;
+  font-size: 0.85rem;
+}
+
+.modal-signup-link a {
+  color: #8B5CF6;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.modal-signup-link a:hover {
+  color: #6D28D9;
+}
+
+/* Responsive Design for Modal */
+@media (max-width: 768px) {
+  .signin-modal-container {
+    width: 90vw;
+    height: 80vh;
+    max-width: 700px;
+  }
+  
+  .modal-content-text h1 {
+    font-size: 1.7rem;
+  }
+  
+  .modal-content-text p {
+    font-size: 0.9rem;
+  }
+  
+  .modal-main-graphic {
+    width: 200px;
+    height: 160px;
+  }
+  
+  .modal-laptop {
+    width: 130px;
+    height: 90px;
+  }
+  
+  .modal-form-container {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .signin-modal-container {
+    width: 95vw;
+    height: 85vh;
+    flex-direction: column;
+  }
+  
+  .signin-modal-left {
+    min-height: 40%;
+    padding: 1rem;
+  }
+  
+  .modal-content-text h1 {
+    font-size: 1.4rem;
+  }
+  
+  .modal-content-text p {
+    font-size: 0.8rem;
+  }
+  
+  .modal-main-graphic {
+    width: 150px;
+    height: 120px;
+  }
+  
+  .modal-laptop {
+    width: 100px;
+    height: 70px;
+  }
+  
+  .signin-modal-right {
+    padding: 1rem;
+  }
+  
+  .modal-form-container {
+    max-width: 250px;
+  }
+  
+  .modal-form-header h2 {
+    font-size: 1.3rem;
+  }
+  
+  .modal-form-options {
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: flex-start;
+  }
+}

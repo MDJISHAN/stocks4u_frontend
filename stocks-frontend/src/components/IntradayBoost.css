@@ -1,0 +1,155 @@
+/* Page structure */
+.intraday-page {
+  background-color: #0e0e0e;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+.intraday-header {
+  background-color: #111;
+  padding: 1.4rem;
+  border-bottom: 1px solid #2e2e2e;
+}
+
+.intraday-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intraday-logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.intraday-logo-icon {
+  margin-right: 8px;
+}
+
+.intraday-search input {
+  background-color: #1c1c1c;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 6px 12px;
+  color: white;
+  width: 300px;
+  height: 40px;
+}
+
+.intraday-user button {
+  background-color: #5b5ee0;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Page Title */
+.intraday-top {
+  padding: 1rem 1.5rem 0.5rem;
+}
+
+.page-title {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info-icon {
+  font-size: 1rem;
+}
+
+/* Table container */
+.intraday-table-container {
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.intraday-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Header + Row Grid */
+.table-header,
+.table-row {
+ 
+  padding: 12px 16px;
+  border-bottom: 1px solid #333;
+ 
+}
+
+.table-header {
+  font-weight: bold;
+  background-color: #181818;
+  font-size: 1rem; 
+    column-gap: 0px; 
+  
+}
+.table-header > div {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+    column-gap: 0px; 
+  
+}
+.table-row {
+  background-color: #121212;
+  font-size: 0.95rem;
+}
+
+.table-row:nth-child(even) {
+  background-color: #151515;
+}
+
+.table-row:hover {
+  background-color: #1f1f1f;
+}
+
+/* Chart cell */
+.chart-cell {
+  max-width: 140px;
+}
+
+/* Status coloring */
+.positive {
+  color: #00ff80;
+  font-weight: bold;
+}
+
+.negative {
+  color: #ff4d4d;
+  font-weight: bold;
+}
+
+/* Messages */
+.loading,
+.error-message {
+  text-align: center;
+  color: #bbb;
+  font-size: 1.2rem;
+  padding: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .table-header,
+  .table-row {
+    grid-template-columns: 40px 80px 80px 90px 60px 100px;
+    font-size: 0.85rem;
+  }
+
+  .intraday-search input {
+    width: 150px;
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+    
+  }
+}

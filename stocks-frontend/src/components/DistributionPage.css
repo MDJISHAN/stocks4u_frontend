@@ -1,0 +1,470 @@
+/* Distribution Page Styles */
+.distribution-page {
+  min-height: 100vh;
+  background: #0a0a0a;
+  color: white;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Header */
+.distribution-header {
+  background: #0a0a0a;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.distribution-header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.distribution-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.distribution-logo-icon {
+  font-size: 1.5rem;
+  color: #F59E0B;
+}
+
+.distribution-logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.distribution-search {
+  flex: 1;
+  max-width: 400px;
+  margin: 0 2rem;
+}
+
+.distribution-search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: white;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.distribution-search-input:focus {
+  border-color: #F59E0B;
+}
+
+.distribution-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.distribution-back-btn {
+  padding: 0.6rem 1.5rem;
+  background: transparent;
+  color: #F59E0B;
+  border: 2px solid #F59E0B;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.distribution-back-btn:hover {
+  background: #F59E0B;
+  color: white;
+}
+
+/* Main Content */
+.distribution-main {
+  padding: 2rem 0;
+}
+
+.distribution-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.distribution-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.distribution-title h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.distribution-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.info-icon {
+  font-size: 1rem;
+  color: #F59E0B;
+}
+
+.info-text {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Tabs */
+.distribution-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+  background: linear-gradient(135deg, #F59E0B, #D97706);
+  color: white;
+  border-color: #F59E0B;
+}
+
+/* View Mode Toggle */
+.view-mode-toggle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.view-mode-toggle label {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.toggle-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.toggle-btn {
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.toggle-btn.active,
+.toggle-btn:hover {
+  background: linear-gradient(135deg, #F59E0B, #D97706);
+  color: white;
+  border-color: #F59E0B;
+}
+
+/* Distribution Chart */
+.distribution-chart {
+  margin-bottom: 2rem;
+}
+
+.chart-container {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.chart-container h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.donut-chart {
+  position: relative;
+  display: inline-block;
+}
+
+.chart-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.total-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.25rem;
+}
+
+.total-label {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Distribution Table */
+.distribution-table-container {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.table-header-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.results-count {
+  font-size: 0.9rem;
+  color: white;
+  font-weight: 600;
+}
+
+.last-updated {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.distribution-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.table-header-row {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  font-weight: 600;
+  color: white;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.distribution-row:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.table-cell {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.category-name {
+  display: flex;
+  align-items: center;
+}
+
+.category-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.color-indicator {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.category-title {
+  font-weight: 600;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.allocation-percent {
+  font-weight: 600;
+  color: white;
+  font-size: 1rem;
+}
+
+.allocation-amount {
+  font-weight: 600;
+  color: white;
+  font-size: 1rem;
+}
+
+.allocation-bar {
+  display: flex;
+  align-items: center;
+}
+
+.bar-container {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+/* Distribution Summary */
+.distribution-summary {
+  margin-bottom: 2rem;
+}
+
+.summary-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.summary-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.summary-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat-icon {
+  font-size: 1.5rem;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .distribution-container {
+    padding: 0 1rem;
+  }
+  
+  .table-row {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  
+  .table-cell {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  
+  .summary-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .distribution-header-container {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .distribution-search {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .distribution-container {
+    padding: 0 1rem;
+  }
+  
+  .distribution-tabs {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .view-mode-toggle {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .toggle-buttons {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .donut-chart svg {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .summary-stats {
+    grid-template-columns: 1fr;
+  }
+}
