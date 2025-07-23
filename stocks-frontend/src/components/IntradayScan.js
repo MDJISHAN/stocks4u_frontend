@@ -25,7 +25,7 @@ const [showBoost, setShowBoost] = useState(false);
 const fetchTurnoverStocks = async () => {
 setLoading(true);
 try {
-const res = await fetch('${process.env.REACT_APP_API_BASE_URL}/high-turnover-stocks?top=100');
+const res = await fetch('https://stocks4u-project.onrender.com/high-turnover-stocks?top=100');
 const data = await res.json();
   const formatted = [...(data.fo_stocks || []), ...(data.non_fo_stocks || [])].map((stock, index) => {
     const turnoverCr = stock.turnover / 1e7;
