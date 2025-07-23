@@ -6,7 +6,7 @@ const OilMonitor = ({ onBack }) => {
   const [chartData, setChartData] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/oi') // Replace with your actual backend URL
+    fetch('${process.env.REACT_APP_API_BASE_URL}/api/oi') // Replace with your actual backend URL
       .then(response => response.json())
       .then(data => {
         const merged = mergeOI(data.data[0]);
