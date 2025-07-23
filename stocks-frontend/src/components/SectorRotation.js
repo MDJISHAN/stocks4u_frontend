@@ -16,7 +16,7 @@ const SectorRotation = ({ onBack }) => {
     setLoading(true);
     setError('');
     try {
-      const response = await fetch(`http://127.0.0.1:5000/api/sector-abnormal-growth?sector=${selectedSector}`);
+      const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/sector-abnormal-growth?sector=${selectedSector}`);
       const data = await response.json();
 
       const ranked = data?.ranked_stocks || [];
