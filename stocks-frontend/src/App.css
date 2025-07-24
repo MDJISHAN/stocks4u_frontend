@@ -7,6 +7,7 @@
 }
 
 body {
+    background-color: #0a0a0a;  /* ✅ Add this line */
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -54,3 +55,13 @@ code {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+/* 🔒 Final override to kill all overlays and enforce dark mode */
+html, body, #root, .App, .layout, .main-wrapper {
+  background-color: #0a0a0a !important;
+  background-image: none !important;
+  backdrop-filter: none !important;
+  opacity: 1 !important;
+  filter: none !important;
+  box-shadow: none !important;
+}
+

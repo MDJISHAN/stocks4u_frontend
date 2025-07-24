@@ -1,12 +1,12 @@
-/* Momentum Radar Page Styles */
+/* SPOTLIGHT PAGE BACKGROUND */
 .momentum-radar-page {
   min-height: 100vh;
-  background: #0a0a0a;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.05) 0%, rgba(18,16,29,1) 40%, #0a0a0a 100%) !important;
+  font-family: 'Inter', sans-serif;
   color: white;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-/* Header */
+/* HEADER BAR - KEEPING FROM ORIGINAL */
 .momentum-header {
   background: #0a0a0a;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -56,7 +56,6 @@
   color: white;
   font-size: 0.9rem;
   outline: none;
-  transition: border-color 0.3s ease;
 }
 
 .momentum-search-input:focus {
@@ -83,659 +82,204 @@
   color: white;
 }
 
-/* Main Content */
-.momentum-main {
-  padding: 2rem 0;
-}
-
-.momentum-container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.momentum-title {
+/* TOGGLE BUTTON */
+.toggle-design-btn-container {
   display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
+  justify-content: center;
+  margin: 1rem 0;
 }
 
-.momentum-title h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: white;
-}
-
-.momentum-info {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.info-icon {
-  font-size: 1rem;
-}
-
-.info-text {
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-/* Tabs */
-.momentum-tabs {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-
-.tab-btn {
-  padding: 0.75rem 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
-  color: rgba(255, 255, 255, 0.8);
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-.tab-btn.active,
-.tab-btn:hover {
-  background: linear-gradient(135deg, #8B5CF6, #6D28D9);
-  color: white;
-  border-color: #8B5CF6;
-}
-
-/* Controls */
-.momentum-controls {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2rem;
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.filter-section {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.filter-section label {
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.filter-select {
-  padding: 0.5rem 1rem;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 6px;
-  color: white;
-  font-size: 0.9rem;
-  outline: none;
-  min-width: 120px;
-}
-
-.filter-select:focus {
-  border-color: #8B5CF6;
-}
-
-.action-buttons {
-  display: flex;
-  gap: 1rem;
-}
-
-.action-btn {
-  padding: 0.6rem 1.2rem;
-  border: none;
-  border-radius: 6px;
+.toggle-design-btn {
+  padding: 0.6rem 1.5rem;
+  font-size: 0.95rem;
   font-weight: 600;
+  color: #fff;
+  background: #6236ff;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-size: 0.9rem;
 }
 
-.action-btn.screener {
-  background: linear-gradient(135deg, #8B5CF6, #6D28D9);
-  color: white;
+.toggle-design-btn:hover {
+  background: #7c56ff;
 }
 
-.action-btn.export {
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.action-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-/* Momentum Chart Section */
-.momentum-chart-section {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.chart-header {
+/* HEADER AREA */
+.momentum-header-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.5rem;
+    margin-left: 2rem;
 }
 
-.chart-header h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: white;
-}
-
-.chart-controls {
+.filter-buttons {
   display: flex;
   gap: 0.5rem;
+  align-items: center;
+    margin-right: 2rem;
 }
 
-.chart-btn {
+.filter-btn {
+  background: #1f1f3a;
+  color: #aaa;
+  border: 1px solid #333;
   padding: 0.4rem 0.8rem;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 6px;
-  color: rgba(255, 255, 255, 0.8);
   cursor: pointer;
-  transition: all 0.3s ease;
-  font-size: 0.8rem;
-}
-
-.chart-btn.active,
-.chart-btn:hover {
-  background: #8B5CF6;
-  color: white;
-  border-color: #8B5CF6;
-}
-
-.momentum-chart {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
-}
-
-.momentum-bars {
-  display: flex;
-  align-items: flex-end;
-  gap: 2rem;
-  height: 250px;
-}
-
-.momentum-bar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  position: relative;
-}
-
-.bar-fill {
-  width: 60px;
-  background: linear-gradient(180deg, #10B981, #059669);
-  border-radius: 8px 8px 0 0;
-  transition: all 0.3s ease;
-  animation: barGrow 2s ease-out;
-}
-
-.momentum-bar.strong .bar-fill {
-  background: linear-gradient(180deg, #10B981, #059669);
-}
-
-.momentum-bar.moderate .bar-fill {
-  background: linear-gradient(180deg, #F59E0B, #D97706);
-}
-
-.momentum-bar.weak .bar-fill {
-  background: linear-gradient(180deg, #EF4444, #DC2626);
-}
-
-.momentum-bar.neutral .bar-fill {
-  background: linear-gradient(180deg, #6B7280, #4B5563);
-}
-
-.bar-label {
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.8);
   font-weight: 500;
 }
 
-@keyframes barGrow {
-  from {
-    height: 0;
-  }
-  to {
-    height: var(--bar-height);
-  }
+.filter-btn.active {
+  background: #6236ff;
+  color: #fff;
+  border-color: #6236ff;
 }
 
-/* Table */
-.momentum-table-container {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
+/* LOM Box */
+.lom-box,
+.lom-box.alt {
+  background: #181836;
+  border: 1px solid #2f2f50;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  margin-right: 95rem;
+  margin-left: 1.2rem;
+
 }
 
-.table-header-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.lom-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.lom-box p {
+  font-size: 0.85rem;
+  color: #aaa;
   margin-bottom: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.results-count {
-  font-size: 0.9rem;
-  color: white;
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-up,
+.btn-down {
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
   font-weight: 600;
+  border: none;
+  cursor: pointer;
+  color: white;
+ 
+
 }
 
-.last-updated {
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.6);
+.btn-up {
+  background-color: #10b981;
 }
 
-.momentum-table {
-  width: 100%;
-  border-collapse: collapse;
+.btn-down {
+  background-color: #ef4444;
+}
+
+/* TABLE */
+.table-container,
+.table-container.alt {
+  border-radius: 10px;
+  border: 1px solid #2f2f50;
+  background-color: #161633;
+  overflow-x: auto;
+}
+
+.table-head,
+.table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  padding: 1rem;
+  align-items: center;
+  border-bottom: 1px solid #2e2e4d;
+}
+
+.table-head {
+  background: #20204a;
+  font-weight: 600;
+  color: #ccc;
 }
 
 .table-row {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 1rem;
-  padding: 1rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background 0.3s;
+}
+
+.table-row:hover {
+  background: #252553;
+}
+
+.highlight {
+  background-color: #292963;
+}
+
+.logo-cell {
+  font-weight: 600;
+  display: flex;
   align-items: center;
-  transition: background-color 0.3s ease;
+  gap: 0.5rem;
 }
 
-.table-header-row {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  font-weight: 600;
-  color: white;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-}
-
-.stock-row:hover {
-  background: rgba(255, 255, 255, 0.05);
-}
-
-.table-cell {
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.stock-name {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-}
-
-.stock-info {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-}
-
-.stock-title {
-  font-weight: 600;
-  color: white;
-  font-size: 0.9rem;
-}
-
-.stock-sector {
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.stock-symbol {
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.stock-price {
-  font-weight: 600;
-  color: white;
+.star {
+  color: #facc15;
   font-size: 1rem;
 }
 
-.stock-change {
-  font-weight: 600;
-  font-size: 0.9rem;
-}
-
-.stock-change.positive {
-  color: #10B981;
-}
-
-.stock-change.negative {
-  color: #EF4444;
-}
-
-.stock-volume {
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.stock-rsi {
-  display: flex;
-  justify-content: center;
-}
-
-.rsi-value {
-  padding: 0.3rem 0.6rem;
+.mini-chart {
+  width: 40px;
+  height: 20px;
   border-radius: 4px;
-  font-weight: 600;
-  font-size: 0.8rem;
-}
-
-.rsi-value.overbought {
-  background: rgba(239, 68, 68, 0.2);
-  color: #EF4444;
-}
-
-.rsi-value.oversold {
-  background: rgba(16, 185, 129, 0.2);
-  color: #10B981;
-}
-
-.rsi-value.normal {
-  background: rgba(107, 114, 128, 0.2);
-  color: #9CA3AF;
-}
-
-.stock-momentum {
-  display: flex;
-  justify-content: center;
-}
-
-.momentum-tag {
-  padding: 0.3rem 0.8rem;
-  border-radius: 4px;
-  font-weight: 600;
-  font-size: 0.8rem;
-}
-
-.momentum-tag.strong {
-  background: rgba(16, 185, 129, 0.2);
-  color: #10B981;
-}
-
-.momentum-tag.moderate {
-  background: rgba(245, 158, 11, 0.2);
-  color: #F59E0B;
-}
-
-.momentum-tag.weak {
-  background: rgba(239, 68, 68, 0.2);
-  color: #EF4444;
-}
-
-.stock-chart {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.chart-container {
-  width: 60px;
-  height: 30px;
+  background: #444;
   position: relative;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
-  overflow: hidden;
 }
 
-.mini-chart-line {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.mini-chart.up {
+  background: linear-gradient(to top, #10b98188, transparent);
 }
 
-.mini-chart-line.up {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(16, 185, 129, 0.1));
+.mini-chart.down {
+  background: linear-gradient(to bottom, #ef444488, transparent);
 }
 
-.mini-chart-line.down {
-  background: linear-gradient(135deg, rgba(239, 68, 68, 0.2), rgba(239, 68, 68, 0.1));
-}
-
-.chart-area {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 60%;
-  background: linear-gradient(180deg, transparent, rgba(139, 92, 246, 0.1));
-  border-radius: 2px 2px 0 0;
-}
-
-.chart-points {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  padding: 0 5px;
-}
-
-.point {
-  width: 3px;
-  height: 3px;
-  border-radius: 50%;
-  background: #8B5CF6;
-}
-
-.mini-chart-line.up .point {
-  background: #10B981;
-}
-
-.mini-chart-line.down .point {
-  background: #EF4444;
-}
-
-/* Momentum Summary */
-.momentum-summary {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 1.5rem;
-}
-
-.summary-card h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: white;
-  margin-bottom: 1rem;
-}
-
-.summary-stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
-
-.stat-item {
-  text-align: center;
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.stat-label {
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 0.5rem;
-  display: block;
-}
-
-.stat-value {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.stat-value.strong {
-  color: #10B981;
-}
-
-.stat-value.moderate {
-  color: #F59E0B;
-}
-
-.stat-value.weak {
-  color: #EF4444;
-}
-
-/* Responsive Design */
-@media (max-width: 1200px) {
-  .momentum-container {
-    padding: 0 1rem;
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .momentum-header-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
   }
-  
+
+  .table-head,
   .table-row {
     grid-template-columns: 1fr;
+    display: block;
+  }
+
+  .table-head span,
+  .table-row span {
+    display: block;
+    padding: 0.3rem 0;
+  }
+
+  .btn-group {
+    flex-direction: column;
     gap: 0.5rem;
   }
-  
-  .table-cell {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 0;
-  }
-  
-  .table-cell::before {
-    content: attr(data-label);
-    font-weight: 600;
-    color: rgba(255, 255, 255, 0.8);
-    flex-shrink: 0;
-  }
-  
-  .summary-stats {
-    grid-template-columns: 1fr;
-  }
-}
 
-@media (max-width: 768px) {
   .momentum-header-container {
     flex-direction: column;
+    align-items: flex-start;
     gap: 1rem;
-    padding: 0 1rem;
-  }
-  
-  .momentum-search {
-    margin: 0;
-    max-width: 100%;
-    width: 100%;
-  }
-  
-  .momentum-back-btn {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-  }
-  
-  .momentum-container {
-    padding: 0 1rem;
-  }
-  
-  .momentum-tabs {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  .momentum-controls {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  .action-buttons {
-    width: 100%;
-    justify-content: center;
-  }
-  
-  .momentum-bars {
-    gap: 1rem;
-  }
-  
-  .bar-fill {
-    width: 40px;
-  }
-}
-
-@media (max-width: 480px) {
-  .momentum-header-container {
-    padding: 0 0.5rem;
-  }
-  
-  .momentum-logo-text {
-    font-size: 1.3rem;
-  }
-  
-  .momentum-search-input {
-    padding: 0.6rem 0.8rem;
-    font-size: 0.85rem;
-  }
-  
-  .momentum-back-btn {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.85rem;
-  }
-  
-  .momentum-container {
-    padding: 0 0.5rem;
-  }
-  
-  .momentum-title h1 {
-    font-size: 1.5rem;
-  }
-  
-  .momentum-bars {
-    gap: 0.5rem;
-  }
-  
-  .bar-fill {
-    width: 30px;
-  }
-  
-  .bar-label {
-    font-size: 0.8rem;
-  }
-  
-  .chart-container {
-    width: 40px;
-    height: 20px;
-  }
-  
-  .action-buttons {
-    flex-direction: column;
   }
 }

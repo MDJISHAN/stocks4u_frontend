@@ -21,19 +21,21 @@
   align-items: center;
   padding: 0 2rem;
   position: relative;
+  gap:10rem;
 }
 
 .logo {
   font-size: 1.8rem;
   font-weight: 700;
   color: #8B5CF6;
-  z-index: 1001;
+  z-index: 100;
+
 }
 
 .nav {
   display: flex;
   gap: 2rem;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease
 }
 
 .nav a {
@@ -65,8 +67,9 @@
 
 .header-buttons {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   align-items: center;
+  margin-left: 0.2rem;
 }
 
 .login-btn {

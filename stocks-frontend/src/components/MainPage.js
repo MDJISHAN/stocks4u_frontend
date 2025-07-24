@@ -32,7 +32,7 @@ const MainPage = ({ onSuccessfulLogin }) => {
       <header className="header">
         <div className="header-container">
           <div className="logo">
-            <span className="logo-text">T</span>
+            <span className="logo-text">S4U</span>
           </div>
           
           <nav className={`nav ${isMobileMenuOpen ? 'nav-open' : ''}`}>
@@ -366,9 +366,7 @@ const MainPage = ({ onSuccessfulLogin }) => {
               </div>
               <div className="sector-change positive">+2.45% (+724.30)</div>
               <div className="sector-chart">
-                <div className="mini-chart">
-                  <div className="chart-line-mini up"></div>
-                </div>
+                
               </div>
             </div>
             
@@ -379,9 +377,7 @@ const MainPage = ({ onSuccessfulLogin }) => {
               </div>
               <div className="sector-change negative">-0.89% (-405.25)</div>
               <div className="sector-chart">
-                <div className="mini-chart">
-                  <div className="chart-line-mini down"></div>
-                </div>
+                
               </div>
             </div>
             
@@ -392,9 +388,7 @@ const MainPage = ({ onSuccessfulLogin }) => {
               </div>
               <div className="sector-change positive">+1.23% (+193.50)</div>
               <div className="sector-chart">
-                <div className="mini-chart">
-                  <div className="chart-line-mini up"></div>
-                </div>
+                
               </div>
             </div>
             
@@ -405,9 +399,7 @@ const MainPage = ({ onSuccessfulLogin }) => {
               </div>
               <div className="sector-change positive">+0.75% (+96.40)</div>
               <div className="sector-chart">
-                <div className="mini-chart">
-                  <div className="chart-line-mini up"></div>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -659,14 +651,14 @@ const MainPage = ({ onSuccessfulLogin }) => {
       {/* Oil Monitor Section */}
       <section className="oil-monitor">
         <div className="container">
-          <h2>Oil Monitor</h2>
-          <p>Track crude oil prices and energy sector movements with real-time data</p>
+          <h2>OI Monitor</h2>
+          <p>Track crude oi prices and energy sector movements with real-time data</p>
           
           <div className="oil-content">
             <div className="oil-info">
               <div className="oil-price-card">
                 <div className="oil-header">
-                  <h3>Crude Oil (Brent)</h3>
+                  <h3>Crude Oi (Brent)</h3>
                   <div className="oil-icon">🛢️</div>
                 </div>
                 <div className="oil-price">$84.50</div>

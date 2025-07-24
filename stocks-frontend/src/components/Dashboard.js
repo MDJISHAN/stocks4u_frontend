@@ -50,21 +50,6 @@ const Dashboard = ({ onLogout, onWatchlistClick, onHighLowClick, onMomentumClick
       case 'Watchlist':
         if (onWatchlistClick) onWatchlistClick();
         break;
-      case '2 Day High & Low':
-        if (onHighLowClick) onHighLowClick();
-        break;
-      case '5 & 15 Min Momentum':
-        if (onMomentumClick) onMomentumClick();
-        break;
-      case '3% Rule Strategy':
-        if (onRuleStrategyClick) onRuleStrategyClick();
-        break;
-      case 'Net Position':
-        if (onNetPositionClick) onNetPositionClick();
-        break;
-      case 'Distribution':
-        if (onDistributionClick) onDistributionClick();
-        break;
       default:
         setCurrentPage('dashboard');
     }
@@ -175,41 +160,7 @@ const Dashboard = ({ onLogout, onWatchlistClick, onHighLowClick, onMomentumClick
       subtitle: 'Track your favorite stocks',
       color: '#3B82F6'
     },
-    {
-      id: 11,
-      icon: '📈',
-      title: '2 Day High & Low',
-      subtitle: 'Track daily high & low breakouts',
-      color: '#8B5CF6'
-    },
-    {
-      id: 12,
-      icon: '⚡',
-      title: '5 & 15 Min Momentum',
-      subtitle: 'Real-time momentum breakouts',
-      color: '#F59E0B'
-    },
-    {
-      id: 13,
-      icon: '🎯',
-      title: '3% Rule Strategy',
-      subtitle: 'Risk-managed trading strategy',
-      color: '#8B5CF6'
-    },
-    {
-      id: 14,
-      icon: '💼',
-      title: 'Net Position',
-      subtitle: 'Your portfolio holdings & P&L',
-      color: '#8B5CF6'
-    },
-    {
-      id: 15,
-      icon: '📊',
-      title: 'Distribution',
-      subtitle: 'Analyze your portfolio allocation',
-      color: '#F59E0B'
-    }
+  
   ];
 
   const footerSections = [
