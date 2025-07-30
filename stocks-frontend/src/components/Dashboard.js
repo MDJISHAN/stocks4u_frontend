@@ -6,6 +6,8 @@ import MomentumRadar from './MomentumRadar';
 import Heatmap from './Heatmap';
 import OilMonitor from './OilMonitor';
 import './Dashboard.css';
+import TradersDiary from './TradersDiary';
+
 
 const Dashboard = ({ onLogout, onWatchlistClick, onHighLowClick, onMomentumClick, onRuleStrategyClick, onIndexMoverClick, onNetPositionClick, onDistributionClick }) => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -29,7 +31,7 @@ const Dashboard = ({ onLogout, onWatchlistClick, onHighLowClick, onMomentumClick
       case 'Swing Zone':
         setCurrentPage('nifty-realty');
         break;
-      case 'Oil Monitor':
+      case 'OI Monitor':
         setCurrentPage('oil-monitor');
         break;
       case 'Momentum Radar':
@@ -83,6 +85,10 @@ const Dashboard = ({ onLogout, onWatchlistClick, onHighLowClick, onMomentumClick
   if (currentPage === 'heatmap') {
     return <Heatmap onBack={handleBackToDashboard} />;
   }
+  if (currentPage === 'traders-diary') {
+  return <TradersDiary onBack={handleBackToDashboard} />;
+}
+
 
   // Default dashboard view
   return renderDashboard();
@@ -114,7 +120,7 @@ const Dashboard = ({ onLogout, onWatchlistClick, onHighLowClick, onMomentumClick
     {
       id: 4,
       icon: '🛢️',
-      title: 'Oil Monitor',
+      title: 'OI Monitor',
       subtitle: 'Identify trades, regions & themes performing well',
       color: '#EF4444'
     },
@@ -268,11 +274,6 @@ const Dashboard = ({ onLogout, onWatchlistClick, onHighLowClick, onMomentumClick
                   </div>
                 </div>
               ))}
-            </div>
-          </section>
-
-          {/* Mobile Apps Section */}
-          <section className="apps-section">
             <div className="apps-grid">
               <div className="app-card ios-app">
                 <div className="app-icon">
@@ -289,7 +290,8 @@ const Dashboard = ({ onLogout, onWatchlistClick, onHighLowClick, onMomentumClick
                 </div>
               </div>
               
-              <div className="app-card android-app">
+            </div>
+             <div className="app-card android-app">
                 <div className="app-icon">
                   🤖
                 </div>
@@ -303,100 +305,14 @@ const Dashboard = ({ onLogout, onWatchlistClick, onHighLowClick, onMomentumClick
                   </button>
                 </div>
               </div>
-            </div>
+              </div>
           </section>
 
+          {/* Mobile Apps Section */}
+          
+
           {/* App Screenshots */}
-          <section className="screenshots-section">
-            <div className="screenshots-grid">
-              <div className="screenshot-card">
-                <div className="screenshot-image">
-                  <div className="phone-mockup">
-                    <div className="phone-screen">
-                      <div className="screen-header">
-                        <div className="screen-title">Market Watch</div>
-                        <div className="screen-menu">⋯</div>
-                      </div>
-                      <div className="screen-content">
-                        <div className="market-item">
-                          <div className="market-name">NIFTY 50</div>
-                          <div className="market-price">19,745.00</div>
-                          <div className="market-change positive">+152.30</div>
-                        </div>
-                        <div className="market-item">
-                          <div className="market-name">SENSEX</div>
-                          <div className="market-price">66,230.00</div>
-                          <div className="market-change positive">+421.80</div>
-                        </div>
-                        <div className="market-item">
-                          <div className="market-name">BANK NIFTY</div>
-                          <div className="market-price">45,120.00</div>
-                          <div className="market-change negative">-89.50</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="screenshot-footer">
-                  <div className="footer-links">
-                    <div className="footer-section">
-                      <div className="footer-title">Social</div>
-                      <div className="footer-link">Twitter</div>
-                      <div className="footer-link">Facebook</div>
-                      <div className="footer-link">Instagram</div>
-                      <div className="footer-link">LinkedIn</div>
-                    </div>
-                  </div>
-                  <button className="footer-button">Learn More</button>
-                </div>
-              </div>
-              
-              <div className="screenshot-card">
-                <div className="screenshot-image">
-                  <div className="phone-mockup">
-                    <div className="phone-screen">
-                      <div className="screen-header">
-                        <div className="screen-title">Portfolio</div>
-                        <div className="screen-menu">⋯</div>
-                      </div>
-                      <div className="screen-content">
-                        <div className="portfolio-chart">
-                          <div className="chart-line"></div>
-                          <div className="chart-points">
-                            <div className="point"></div>
-                            <div className="point"></div>
-                            <div className="point"></div>
-                          </div>
-                        </div>
-                        <div className="portfolio-stats">
-                          <div className="stat">
-                            <div className="stat-label">Total</div>
-                            <div className="stat-value">₹1,24,530</div>
-                          </div>
-                          <div className="stat">
-                            <div className="stat-label">P&L</div>
-                            <div className="stat-value positive">+₹2,450</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="screenshot-footer">
-                  <div className="footer-links">
-                    <div className="footer-section">
-                      <div className="footer-title">Company</div>
-                      <div className="footer-link">About Us</div>
-                      <div className="footer-link">Careers</div>
-                      <div className="footer-link">Press</div>
-                      <div className="footer-link">Blog</div>
-                    </div>
-                  </div>
-                  <button className="footer-button">Learn More</button>
-                </div>
-              </div>
-            </div>
-          </section>
+
         </div>
       </main>
 

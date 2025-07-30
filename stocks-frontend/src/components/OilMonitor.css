@@ -29,6 +29,62 @@
   margin-left: 0.5rem;
   color: #fcd34d;
 }
+/* --- Search Bar Section --- */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 1rem;
+  justify-content: left;
+  flex-wrap: wrap;
+  margin-left: 1.5rem;
+}
+
+/* --- Range Slider --- */
+.search-bar input[type="range"] {
+  width: 1700px;
+  height: 6px;
+  appearance: none;
+  background: #8b5cf6;
+  border-radius: 4px;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+.search-bar input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  border: 2px solid #8b5cf6;
+  cursor: pointer;
+}
+
+.search-bar input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  border: 2px solid #8b5cf6;
+  cursor: pointer;
+}
+
+/* --- GO Button --- */
+.go-btn {
+  padding: 10px 39px;
+  background-color: #8b5cf6;
+  color: white;
+  font-weight: 600;
+  border: 3px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.go-btn:hover {
+  background-color: #7c3aed;
+}
 
 .how-to-use {
   color: #60a5fa;
@@ -38,11 +94,11 @@
 
 .dot {
   height: 10px;
-  width: 10px;
+  width: 1000px;
   background-color: #007bff;
-  border-radius: 50%;
+  border-radius: 100%;
   display: inline-block;
-  margin-left: 4px;
+  margin-left: 40px;
 }
 
 .chart-wrapper {
@@ -641,6 +697,77 @@
   font-weight: 600;
   color: white;
 }
+
+/* OilMonitor.css */
+
+/* Existing styles */
+/* -- Buttons Wrapper -- */
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 40px;
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
+
+}
+
+/* -- Tab Buttons -- */
+.tab-button {
+  padding: 10px 28px;
+  font-size: 19px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 1px solid #4b5563;
+  background-color: #1f2937;
+  color: #f3f4f6;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.tab-button:hover {
+  background-color:  #8b5cf6;
+  transform: scale(1.03);
+}
+
+.tab-button.active {
+  background-color: #8b5cf6;
+  border-color: #8b5cf6;
+  color: white;
+}
+
+/* -- Back Button -- */
+.tab-back {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  padding: 12px 26px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #1f2937;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.tab-back:hover {
+  background-color: #8b5cf6;
+}
+
+/* -- Responsive Mobile -- */
+@media (max-width: 768px) {
+  .button-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 
 /* Responsive Design */
 @media (max-width: 1200px) {

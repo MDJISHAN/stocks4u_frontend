@@ -65,136 +65,19 @@ const MainPage = ({ onSuccessfulLogin }) => {
           <div className="hero-phones">
             <div className="phone phone-1">
               <div className="phone-screen">
-                <div className="phone-content">
-                  <div className="phone-header">
-                    <div className="phone-time">9:41</div>
-                    <div className="phone-status">
-                      <div className="signal-bars">
-                        <div className="bar"></div>
-                        <div className="bar"></div>
-                        <div className="bar"></div>
-                        <div className="bar"></div>
-                      </div>
-                      <div className="wifi-icon">📶</div>
-                      <div className="battery">🔋</div>
-                    </div>
-                  </div>
-                  <div className="phone-app">
-                    <div className="app-header">
-                      <h3>Portfolio</h3>
-                      <span className="app-menu">⋯</span>
-                    </div>
-                    <div className="portfolio-chart">
-                      <div className="chart-line-animated"></div>
-                      <div className="chart-points">
-                        <div className="point active"></div>
-                        <div className="point"></div>
-                        <div className="point"></div>
-                        <div className="point"></div>
-                      </div>
-                    </div>
-                    <div className="portfolio-stats">
-                      <div className="stat-item">
-                        <span className="stat-label">Total</span>
-                        <span className="stat-value">$48,520</span>
-                      </div>
-                      <div className="stat-item">
-                        <span className="stat-label">Profit</span>
-                        <span className="stat-value green">+$2,420</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+   
               </div>
             </div>
             
             <div className="phone phone-2 main-phone">
               <div className="phone-screen">
-                <div className="phone-content">
-                  <div className="phone-header">
-                    <div className="phone-time">9:41</div>
-                    <div className="phone-status">
-                      <div className="signal-bars">
-                        <div className="bar"></div>
-                        <div className="bar"></div>
-                        <div className="bar"></div>
-                        <div className="bar"></div>
-                      </div>
-                      <div className="wifi-icon">📶</div>
-                      <div className="battery">🔋</div>
-                    </div>
-                  </div>
-                  <div className="phone-app">
-                    <div className="app-header">
-                      <h3>Market Watch</h3>
-                      <span className="app-menu">⋯</span>
-                    </div>
-                    <div className="market-list">
-                      <div className="market-item">
-                        <div className="market-icon nifty">N</div>
-                        <div className="market-info">
-                          <div className="market-name">NIFTY 50</div>
-                          <div className="market-price">19,745.00</div>
-                        </div>
-                        <div className="market-change positive">+152.30</div>
-                      </div>
-                      <div className="market-item">
-                        <div className="market-icon sensex">S</div>
-                        <div className="market-info">
-                          <div className="market-name">SENSEX</div>
-                          <div className="market-price">66,230.00</div>
-                        </div>
-                        <div className="market-change positive">+421.80</div>
-                      </div>
-                      <div className="market-item">
-                        <div className="market-icon banknifty">B</div>
-                        <div className="market-info">
-                          <div className="market-name">BANK NIFTY</div>
-                          <div className="market-price">45,120.00</div>
-                        </div>
-                        <div className="market-change negative">-89.50</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+     
               </div>
             </div>
             
             <div className="phone phone-3">
               <div className="phone-screen">
-                <div className="phone-content">
-                  <div className="phone-header">
-                    <div className="phone-time">9:41</div>
-                    <div className="phone-status">
-                      <div className="signal-bars">
-                        <div className="bar"></div>
-                        <div className="bar"></div>
-                        <div className="bar"></div>
-                        <div className="bar"></div>
-                      </div>
-                      <div className="wifi-icon">📶</div>
-                      <div className="battery">🔋</div>
-                    </div>
-                  </div>
-                  <div className="phone-app">
-                    <div className="app-header">
-                      <h3>News & Analysis</h3>
-                      <span className="app-menu">⋯</span>
-                    </div>
-                    <div className="news-feed">
-                      <div className="news-item">
-                        <div className="news-title">Market Outlook</div>
-                        <div className="news-content">Bulls maintain control as indices hit new highs...</div>
-                        <div className="news-time">2 min ago</div>
-                      </div>
-                      <div className="news-item">
-                        <div className="news-title">Sector Focus</div>
-                        <div className="news-content">IT stocks surge on strong earnings...</div>
-                        <div className="news-time">5 min ago</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
               </div>
             </div>
           </div>
@@ -202,77 +85,20 @@ const MainPage = ({ onSuccessfulLogin }) => {
       </section>
 
       {/* Sector Rotation Section */}
-      <section className="sector-rotation" id="features">
+      <section className="sector-rotation">
         <div className="container">
+          <div className="phone1 phone-sector">
+              <div className="phone-screen">
+                <img src="images/sector rotation.png" className="phone-image" />
+
+              </div>
+            </div>
           <h2>Sector Rotation</h2>
           <p>Stay ahead of market trends with our advanced sector rotation analysis</p>
           
-          <div className="sector-grid">
-            <div className="sector-card">
-              <div className="sector-icon technology">
-                <span className="sector-symbol">💻</span>
-              </div>
-              <div className="sector-info">
-                <h3>Technology</h3>
-                <div className="sector-stats">
-                  <span className="sector-price">₹2,847.50</span>
-                  <span className="sector-change positive">+2.45%</span>
-                </div>
-                <div className="sector-trend">
-                  <div className="trend-line up"></div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="sector-card">
-              <div className="sector-icon healthcare">
-                <span className="sector-symbol">🏥</span>
-              </div>
-              <div className="sector-info">
-                <h3>Healthcare</h3>
-                <div className="sector-stats">
-                  <span className="sector-price">₹1,925.30</span>
-                  <span className="sector-change negative">-1.20%</span>
-                </div>
-                <div className="sector-trend">
-                  <div className="trend-line down"></div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="sector-card">
-              <div className="sector-icon finance">
-                <span className="sector-symbol">🏦</span>
-              </div>
-              <div className="sector-info">
-                <h3>Finance</h3>
-                <div className="sector-stats">
-                  <span className="sector-price">₹3,128.75</span>
-                  <span className="sector-change positive">+0.80%</span>
-                </div>
-                <div className="sector-trend">
-                  <div className="trend-line up"></div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="sector-card">
-              <div className="sector-icon energy">
-                <span className="sector-symbol">⚡</span>
-              </div>
-              <div className="sector-info">
-                <h3>Energy</h3>
-                <div className="sector-stats">
-                  <span className="sector-price">₹2,456.90</span>
-                  <span className="sector-change positive">+3.15%</span>
-                </div>
-                <div className="sector-trend">
-                  <div className="trend-line up"></div>
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
+        
       </section>
 
       {/* Introducing Section */}
@@ -418,361 +244,137 @@ const MainPage = ({ onSuccessfulLogin }) => {
             <div className="tab">Most Active</div>
           </div>
           
-          <div className="mover-grid">
-            <div className="mover-card">
-              <div className="company-info">
-                <div className="company-logo">TCS</div>
-                <div className="company-details">
-                  <div className="company-name">Tata Consultancy Services</div>
-                  <div className="company-sector">Information Technology</div>
-                </div>
-              </div>
-              <div className="price-info">
-                <div className="current-price">₹3,847.50</div>
-                <div className="price-change positive">+5.25%</div>
+      <div className="phone1 phone-sector">
+              <div className="phone-screen">
+                <img src="images/index mover.png" className="phone-image" />
+
               </div>
             </div>
-            
-            <div className="mover-card">
-              <div className="company-info">
-                <div className="company-logo">INFY</div>
-                <div className="company-details">
-                  <div className="company-name">Infosys Limited</div>
-                  <div className="company-sector">Information Technology</div>
-                </div>
-              </div>
-              <div className="price-info">
-                <div className="current-price">₹1,542.30</div>
-                <div className="price-change positive">+4.80%</div>
-              </div>
-            </div>
-            
-            <div className="mover-card">
-              <div className="company-info">
-                <div className="company-logo">RELIANCE</div>
-                <div className="company-details">
-                  <div className="company-name">Reliance Industries</div>
-                  <div className="company-sector">Oil & Gas</div>
-                </div>
-              </div>
-              <div className="price-info">
-                <div className="current-price">₹2,456.75</div>
-                <div className="price-change positive">+3.45%</div>
-              </div>
-            </div>
-            
-            <div className="mover-card">
-              <div className="company-info">
-                <div className="company-logo">HDFC</div>
-                <div className="company-details">
-                  <div className="company-name">HDFC Bank</div>
-                  <div className="company-sector">Banking</div>
-                </div>
-              </div>
-              <div className="price-info">
-                <div className="current-price">₹1,789.20</div>
-                <div className="price-change positive">+2.95%</div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
       {/* SIP & SWAP Calculator */}
-      <section className="sip-swap-calculator" id="tools">
-        <div className="container">
-          <h2>SIP & SWAP Calculator</h2>
-          <p>Calculate your systematic investment plan returns and swap strategies</p>
-          
-          <div className="calculator-grid">
-            <div className="calculator-card">
-              <div className="calculator-header">
-                <h3>SIP Calculator</h3>
-                <div className="calculator-icon">📈</div>
-              </div>
-              <div className="calculator-form">
-                <div className="form-group">
-                  <label>Monthly Investment</label>
-                  <input type="number" placeholder="₹5,000" />
-                </div>
-                <div className="form-group">
-                  <label>Time Period (Years)</label>
-                  <input type="number" placeholder="10" />
-                </div>
-                <div className="form-group">
-                  <label>Expected Return (%)</label>
-                  <input type="number" placeholder="12" />
-                </div>
-                <button className="calculate-btn">Calculate Returns</button>
-              </div>
-              <div className="calculator-result">
-                <div className="result-item">
-                  <span className="result-label">Invested Amount</span>
-                  <span className="result-value">₹6,00,000</span>
-                </div>
-                <div className="result-item">
-                  <span className="result-label">Expected Returns</span>
-                  <span className="result-value">₹5,77,435</span>
-                </div>
-                <div className="result-item total">
-                  <span className="result-label">Total Value</span>
-                  <span className="result-value">₹11,77,435</span>
-                </div>
-              </div>
-            </div>
-            
-            <div className="calculator-card">
-              <div className="calculator-header">
-                <h3>SWAP Calculator</h3>
-                <div className="calculator-icon">🔄</div>
-              </div>
-              <div className="calculator-form">
-                <div className="form-group">
-                  <label>From Stock</label>
-                  <select>
-                    <option>Select Stock</option>
-                    <option>TCS</option>
-                    <option>INFY</option>
-                    <option>RELIANCE</option>
-                  </select>
-                </div>
-                <div className="form-group">
-                  <label>To Stock</label>
-                  <select>
-                    <option>Select Stock</option>
-                    <option>HDFC</option>
-                    <option>ICICI</option>
-                    <option>AXIS</option>
-                  </select>
-                </div>
-                <div className="form-group">
-                  <label>Quantity</label>
-                  <input type="number" placeholder="100" />
-                </div>
-                <button className="calculate-btn">Calculate Swap</button>
-              </div>
-              <div className="calculator-result">
-                <div className="result-item">
-                  <span className="result-label">Swap Cost</span>
-                  <span className="result-value">₹450</span>
-                </div>
-                <div className="result-item">
-                  <span className="result-label">Tax Implication</span>
-                  <span className="result-value">₹2,340</span>
-                </div>
-                <div className="result-item total">
-                  <span className="result-label">Net Benefit</span>
-                  <span className="result-value">₹8,210</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+     
 
       {/* Trader Diary Section */}
-      <section className="trader-diary">
-        <div className="container">
-          <h2>Trader Diary</h2>
-          <p>Track your trading performance and maintain detailed records</p>
-          
-          <div className="diary-content">
-            <div className="diary-stats">
-              <div className="stat-card">
-                <div className="stat-icon">📊</div>
-                <div className="stat-info">
-                  <h3>Total Trades</h3>
-                  <div className="stat-number">1,247</div>
-                </div>
-              </div>
-              
-              <div className="stat-card">
-                <div className="stat-icon">💹</div>
-                <div className="stat-info">
-                  <h3>Win Rate</h3>
-                  <div className="stat-number">68.5%</div>
-                </div>
-              </div>
-              
-              <div className="stat-card">
-                <div className="stat-icon">💰</div>
-                <div className="stat-info">
-                  <h3>Total P&L</h3>
-                  <div className="stat-number">₹2,45,670</div>
-                </div>
-              </div>
-              
-              <div className="stat-card">
-                <div className="stat-icon">📈</div>
-                <div className="stat-info">
-                  <h3>Avg. Return</h3>
-                  <div className="stat-number">15.2%</div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="diary-table">
-              <div className="table-header">
-                <h3>Recent Trades</h3>
-                <button className="add-trade-btn" onClick={openSignInModal}>Add Trade</button>
-              </div>
-              <div className="trade-table">
-                
-                <div className="table-row">
-                  <div className="col">Dec 15, 2024</div>
-                  <div className="col">TCS</div>
-                  <div className="col buy">BUY</div>
-                  <div className="col">50</div>
-                  <div className="col">₹3,847.50</div>
-                  <div className="col positive">+₹2,450</div>
-                </div>
-                <div className="table-row">
-                  <div className="col">Dec 14, 2024</div>
-                  <div className="col">INFY</div>
-                  <div className="col sell">SELL</div>
-                  <div className="col">100</div>
-                  <div className="col">₹1,542.30</div>
-                  <div className="col positive">+₹1,890</div>
-                </div>
-                <div className="table-row">
-                  <div className="col">Dec 13, 2024</div>
-                  <div className="col">RELIANCE</div>
-                  <div className="col buy">BUY</div>
-                  <div className="col">25</div>
-                  <div className="col">₹2,456.75</div>
-                  <div className="col negative">-₹780</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Oil Monitor Section */}
       <section className="oil-monitor">
-        <div className="container">
-          <h2>OI Monitor</h2>
-          <p>Track crude oi prices and energy sector movements with real-time data</p>
-          
-          <div className="oil-content">
-            <div className="oil-info">
-              <div className="oil-price-card">
-                <div className="oil-header">
-                  <h3>Crude Oi (Brent)</h3>
-                  <div className="oil-icon">🛢️</div>
-                </div>
-                <div className="oil-price">$84.50</div>
-                <div className="oil-change positive">+2.45% (+$2.02)</div>
-                <div className="oil-stats">
-                  <div className="stat-row">
-                    <span className="stat-label">24h High</span>
-                    <span className="stat-value">$85.20</span>
-                  </div>
-                  <div className="stat-row">
-                    <span className="stat-label">24h Low</span>
-                    <span className="stat-value">$82.15</span>
-                  </div>
-                  <div className="stat-row">
-                    <span className="stat-label">Volume</span>
-                    <span className="stat-value">2.4M</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="oil-related">
-                <h4>Related Stocks</h4>
-                <div className="related-stocks">
-                  <div className="stock-item">
-                    <div className="stock-name">ONGC</div>
-                    <div className="stock-price">₹245.80</div>
-                    <div className="stock-change positive">+3.2%</div>
-                  </div>
-                  <div className="stock-item">
-                    <div className="stock-name">IOC</div>
-                    <div className="stock-price">₹132.50</div>
-                    <div className="stock-change positive">+2.8%</div>
-                  </div>
-                  <div className="stock-item">
-                    <div className="stock-name">BPCL</div>
-                    <div className="stock-price">₹398.75</div>
-                    <div className="stock-change positive">+1.9%</div>
-                  </div>
-                </div>
+            <div className="oil-content">
+              <div className="oil-visual">
+              <div className="hero-phones">
+            <div className="phone phone-1">
+              <div className="phone-screen">
+                <img src="images/Oi monitor 1.png" className="phone-image" />
+
               </div>
             </div>
             
-            <div className="oil-chart">
-              <div className="chart-header">
-                <h4>Price Movement (24h)</h4>
-                <div className="chart-controls">
-                  <button className="chart-btn active">1H</button>
-                  <button className="chart-btn">4H</button>
-                  <button className="chart-btn">1D</button>
-                  <button className="chart-btn">1W</button>
-                </div>
+            <div className="phone phone-2 main-phone">
+              <div className="phone-screen">
+                  <img src="images/OI monitor 2.png" className="phone-image" />
+
               </div>
-              <div className="chart-container">
-                <div className="chart-grid">
-                  <div className="grid-line horizontal"></div>
-                  <div className="grid-line horizontal"></div>
-                  <div className="grid-line horizontal"></div>
-                  <div className="grid-line horizontal"></div>
-                  <div className="grid-line vertical"></div>
-                  <div className="grid-line vertical"></div>
-                  <div className="grid-line vertical"></div>
-                  <div className="grid-line vertical"></div>
-                </div>
-                <div className="oil-price-line"></div>
-                <div className="chart-area"></div>
-                <div className="chart-points">
-                  <div className="point"></div>
-                  <div className="point"></div>
-                  <div className="point"></div>
-                  <div className="point"></div>
-                  <div className="point"></div>
-                  <div className="point"></div>
-                </div>
+            </div>
+            
+            <div className="phone phone-3">
+              <div className="phone-screen">
+              <img src="images/OI Monitor 3.png" className="phone-image" />
+
               </div>
             </div>
           </div>
-        </div>
-      </section>
+              </div>
+              <div className="oil-info">
+                <h2>OI Monitor</h2>
+                <p>
+                  Unlock the secrets of the top 1% professional institutional traders with the Super Trader VIP Membership. Get unlimited access to powerful institutional trading ideas, in depth trading education and world class technology enabled ecosystem.
+                </p>
+                <ul>
+                  <li>📊 Trade Like Professional Traders</li>
+                  <li>💡 Powerful Trade Ideas</li>
+                  <li>🧠 10+ Trading Strategies</li>
+                </ul>
+                <button className="get-started-btn">Get Started</button>
+              </div>
+            </div>
+          </section>
+           <div className="section-divider">CTA</div>
+
+          {/* REPLACED CARD GRID SECTION */}
+          <div className="card-grid">
+            <div className="card">
+              <img src="/images/image-removebg-preview.png" alt="SIP Calculator" className="card-icon" />
+              <h3>SIP & SWP Calculator</h3>
+              <p>Description</p>
+            </div>
+
+            <div className="card">
+              <img src="/images/dairy.png" alt="Traders Diary" className="dairy-image" />
+              <h3>Traders Diary</h3>
+              <p>Make informed trading decisions with access to the minute insights from specific sectors.</p>
+            </div>
+
+            <div className="card">
+              <div className="chart-box">
+                <img src="/images/real data.png" alt="Traders Diary" className="sector-data"/>
+                <h3>Realtime Sector Data</h3>
+                <p>Description</p>
+              </div>
+            </div>
+
+            <div className="card">
+              <h3>Index Mover</h3>
+              <p>Description</p>
+            </div>
+          </div>
 
       {/* Why Choose StockFlex Section */}
-      <section className="why-choose">
+      <section className="why-choose" id="features">
         <div className="container">
           <h2>Why Choose StockFlex?</h2>
           <p>Discover what makes us the preferred choice for traders worldwide</p>
           
           <div className="choose-grid">
             <div className="choose-card">
-              <div className="choose-icon">⚡</div>
-              <h3>Lightning Fast</h3>
-              <p>Execute trades in milliseconds with our advanced infrastructure and real-time data processing</p>
-            </div>
-            <div className="choose-card">
-              <div className="choose-icon">🔐</div>
-              <h3>Bank-Level Security</h3>
-              <p>Your funds and data are protected with military-grade encryption and multi-factor authentication</p>
+              <div className="choose-icon">📈</div>
+              <h3>Intraday Scan</h3>
+              <p>Identify trades, regions & themes performing</p>
             </div>
             <div className="choose-card">
               <div className="choose-icon">📊</div>
-              <h3>Advanced Analytics</h3>
-              <p>Make informed decisions with our comprehensive market analysis and AI-powered insights</p>
+              <h3>Sector Rotation</h3>
+              <p>Identify Sector data, regions & themes performing</p>
             </div>
             <div className="choose-card">
-              <div className="choose-icon">🌍</div>
-              <h3>Global Markets</h3>
-              <p>Trade stocks from over 50 countries and exchanges worldwide with unified platform</p>
+              <div className="choose-icon">🛢️</div>
+              <h3>OI Monitor</h3>
+              <p>Monitors trades, regions & themes performing</p>
             </div>
             <div className="choose-card">
+              <div className="choose-icon">📡</div>
+              <h3>Momentum rader</h3>
+              <p>Identify Momentum, regions & themes performing</p>
+            </div>
+             <div className="choose-card">
+              <div className="choose-icon">🔥</div>
+              <h3>Heatmap</h3>
+              <p>Trade anywhere, anytime with our award-winning mobile app and seamless synchronization</p>
+            </div>
+             <div className="choose-card">
               <div className="choose-icon">🎯</div>
-              <h3>Precision Trading</h3>
+              <h3>Swing Zone</h3>
+              <p>Trade anywhere, anytime with our award-winning mobile app and seamless synchronization</p>
+            </div>
+            <div className="choose-card">
+              <div className="choose-icon">📊</div>
+              <h3>Index Mover</h3>
               <p>Advanced order types and algorithmic trading capabilities for professional traders</p>
             </div>
             <div className="choose-card">
-              <div className="choose-icon">📱</div>
-              <h3>Mobile First</h3>
+              <div className="choose-icon">📖</div>
+              <h3>Trader Dairy</h3>
               <p>Trade anywhere, anytime with our award-winning mobile app and seamless synchronization</p>
             </div>
           </div>
@@ -957,6 +559,10 @@ const MainPage = ({ onSuccessfulLogin }) => {
               <a href="#" className="social-link">🐦</a>
               <a href="#" className="social-link">📸</a>
               <a href="#" className="social-link">💼</a>
+              <a href="#" className="social-link">🔔 </a>
+              <a href="#" className="social-link">📝</a>
+              <a href="#" className="social-link">👤</a>
+
             </div>
           </div>
           

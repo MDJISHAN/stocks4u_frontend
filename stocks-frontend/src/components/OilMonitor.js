@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import './OilMonitor.css';
+import NetPosition from './NetPosition';
+import Distribution from './Distribution';
 
 const OilMonitor = ({ onBack }) => {
   const [chartData, setChartData] = useState([]);
+   const [activeTab, setActiveTab] = useState('main');
 
   useEffect(() => {
     fetch('${process.env.REACT_APP_API_BASE_URL}/api/oi') // Replace with your actual backend URL
@@ -57,6 +60,41 @@ const OilMonitor = ({ onBack }) => {
       </header>
 
       {/* Main Content */}
+       {activeTab === 'main' && (
+        <>
+          {/* ORIGINAL OIL MONITOR HEADER SECTION */}
+          <div className="oil-header-wrapper">
+            <h1 className="oil-title">OI Monitor</h1>
+            <div className="button-row">
+              <button className="tab-button" onClick={() => setActiveTab('net')}>Net Position</button>
+              <button className="tab-button" onClick={() => setActiveTab('distribution')}>Distribution</button>
+            </div>
+            <div className="search-bar">
+              <input type="range" />
+              <button className="go-btn">GO</button>
+            </div>
+          </div>
+
+          {/* MAIN CONTENT */}
+          <div className="main-oil-content">
+            {/* Insert your full original content layout here */}
+          </div>
+        </>
+      )}
+
+      {activeTab === 'net' && (
+        <>
+          <button onClick={() => setActiveTab('main')} className="tab-back">← Back</button>
+          <NetPosition />
+        </>
+      )}
+
+      {activeTab === 'distribution' && (
+        <>
+          <button onClick={() => setActiveTab('main')} className="tab-back">← Back</button>
+          <Distribution />
+        </>
+      )}
       <main className="oil-main">
         <div className="oil-container">
           <div className="oil-title">
