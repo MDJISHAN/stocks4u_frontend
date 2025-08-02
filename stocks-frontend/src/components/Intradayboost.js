@@ -20,7 +20,7 @@ const IntradayBoost = ({ onBack }) => {
   useEffect(() => {
     const fetchBoostData = async () => {
       try {
-        const res = await fetch('https://stocks4u-project.onrender.com/top-and-low-growth'); // <-- Your API endpoint
+        const res = await fetch('http://127.0.0.1:5000/top-and-low-growth'); // <-- Your API endpoint
         const data = await res.json();
         setBoostData(data);
       } catch (err) {
