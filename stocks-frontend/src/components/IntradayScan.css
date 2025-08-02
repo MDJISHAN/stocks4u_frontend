@@ -49,7 +49,10 @@
   border-radius: 6px;
   cursor: pointer;
 }
+.Intraday-buttons:hover{
+      background-color: #5b5ee0;
 
+}
 /* Page Title */
 .intraday-top.page-title {
   padding: 1rem;

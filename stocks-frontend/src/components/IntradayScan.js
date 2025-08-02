@@ -2,6 +2,12 @@ import React, { useEffect, useState } from 'react';
 import './IntradayScan.css';
 import { Line } from 'react-chartjs-2';
 import IntradayBoost from './Intradayboost.js';
+import TopGainers from './TopGainers';
+import TopLevelStocks from './TopLevelStocks';
+import LowLevelStocks from './LowLevelStocks';
+import VolumeBoost from './VolumeBoost.js';
+
+
 
 import {
 Chart as ChartJS,
@@ -18,6 +24,12 @@ const [stockData, setStockData] = useState([]);
 const [loading, setLoading] = useState(true);
 const [error, setError] = useState('');
 const [showBoost, setShowBoost] = useState(false);
+const [showGainers, setShowGainers] = useState(false);
+const [showTopLevel, setShowTopLevel] = useState(false);
+const [showLowLevel, setShowLowLevel] = useState(false);
+const [ShowVolume, setShowVolume] = useState(false);
+
+
 
 
 
@@ -70,6 +82,13 @@ fetchTurnoverStocks();
 if (showBoost) {
   return <IntradayBoost onBack={() => setShowBoost(false)} />;
 }
+if (showBoost) return <IntradayBoost onBack={() => setShowBoost(false)} />;
+if (showGainers) return <TopGainers onBack={() => setShowGainers(false)} />;
+if (showTopLevel) return <TopLevelStocks onBack={() => setShowTopLevel(false)} />;
+if (showLowLevel) return <LowLevelStocks onBack={() => setShowLowLevel(false)} />;
+if (ShowVolume) return <VolumeBoost onBack={() => setShowVolume(false)} />;
+
+
 
 return (
 <div className="intraday-page">
@@ -97,9 +116,13 @@ return (
       </h1>
       <div className="categories">
         <button className="active">High Turnover Stocks</button>
-        <button onClick={() => setShowBoost(true)}>Intraday Boost</button>
+        <button onClick={() => setShowBoost(true)} className='Intraday-buttons'>Intraday Boost</button>
 
-        <button>Volume Boost</button>
+        <button onClick={() => setShowVolume(true)} className='Intraday-buttons'>Volume Boost</button>
+        <button onClick={() => setShowGainers(true)} className='Intraday-buttons'>Top Gainers</button>
+        <button onClick={() => setShowTopLevel(true)} className='Intraday-buttons'>Top Level Stocks</button>
+       <button onClick={() => setShowLowLevel(true)} className='Intraday-buttons'>Low Level Stocks</button>
+
       </div>
       <div className="filters">
         <span>Filter By:</span>

@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import './MomentumRadar.css';
+import MomentumSpike from './MomentumSpike';
+import ThreePercentRulePage from './RuleStrategyPage';
+
 
 const MomentumRadar = ({ onBack }) => {
   const [viewMode, setViewMode] = useState('default');
+  const [pageView, setPageView] = useState('main'); // 'main', '5min', '3percent'
+
   const [data] = useState([
     {
       id: 1,
@@ -42,6 +47,17 @@ const MomentumRadar = ({ onBack }) => {
     }
   ]);
 
+  const renderDummyPage = (title) => (
+    <div className="custom-page">
+      <h2>{title}</h2>
+      <p>This is the <strong>{title}</strong> page. Replace with full design later.</p>
+      <button className="momentum-back-btn" onClick={() => setPageView('main')}>← Back</button>
+    </div>
+  );
+
+  if (pageView === '5min') return <MomentumSpike onBack={() => setPageView('main')} />;
+if (pageView === '3percent') return <ThreePercentRulePage onBack={() => setPageView('main')} />;
+
   return (
     <div className="momentum-radar-page">
       {/* HEADER SECTION */}
@@ -53,30 +69,21 @@ const MomentumRadar = ({ onBack }) => {
           </div>
 
           <div className="momentum-search">
-            <input
-              type="text"
-              placeholder="Search Company"
-              className="momentum-search-input"
-            />
+            <input type="text" placeholder="Search Company" className="momentum-search-input" />
           </div>
 
           <div className="momentum-user">
-            <button className="momentum-back-btn" onClick={onBack}>
-              ← Back to Dashboard
-            </button>
+            <button className="momentum-back-btn" onClick={onBack}>← Back to Dashboard</button>
           </div>
         </div>
       </header>
 
-      {/* TOGGLE BUTTON */}
-      <div className="toggle-design-btn-container">
-        <button
-          className="toggle-design-btn"
-          onClick={() => setViewMode(viewMode === 'default' ? 'modern' : 'default')}
-        >
-          Switch 2 DAY HIGH & LOW
-        </button>
-      </div>
+      {/* NEW NAV BUTTONS */}
+
+
+      {/* EXISTING TOGGLE VIEW */}
+     
+
       {/* MAIN BODY */}
       <main className="momentum-radar">
         {viewMode === 'default' ? (
@@ -89,15 +96,33 @@ const MomentumRadar = ({ onBack }) => {
                 <button className="filter-btn active">All Stocks</button>
               </div>
             </div>
-
-            <section className="lom-box">
-              <h3>LOM SHORT TERM</h3>
-              <p>How to use?</p>
-              <div className="btn-group">
-                <button className="btn-up">Up</button>
-                <button className="btn-down">Down</button>
-              </div>
-            </section>
+           <div style={{display:"flex"}}>
+            <div className="spike-section">
+            <h4>LONG SHORT TERM</h4>
+            <p>how to use?</p>
+             <button className="btn green-btn">UP</button>
+            <button className="btn red-btn">DOWN</button>
+           </div>
+            <div className="spike-section">
+             <button className="toggle-design-btn" onClick={() => setViewMode(viewMode === 'default' ? 'modern' : 'default')}>
+                Switch 2 DAY HIGH & LOW<br />
+                 <button className="btn green-btn">UP</button>
+                 <button className="btn red-btn">DOWN</button>
+             </button>
+            </div>
+        <div className="spike-section">
+        <button onClick={() => setPageView('5min')} className="toggle-design-btn">5 & 15 min <br /><br />
+             <button className="btn green-btn">UP</button>
+            <button className="btn red-btn">DOWN</button>
+          </button>
+        </div>
+        <div className="spike-section">
+        <button onClick={() => setPageView('3percent')} className="toggle-design-btn">3% Rule<br /><br />
+         <button className="btn green-btn">UP</button>
+            <button className="btn red-btn">DOWN</button>
+        </button>
+      </div>
+           </div>
 
             <section className="table-container">
               <div className="table-head">
@@ -110,14 +135,12 @@ const MomentumRadar = ({ onBack }) => {
               {data.map((stock, index) => (
                 <div key={index} className={`table-row ${stock.isStarred ? 'highlight' : ''}`}>
                   <span className="logo-cell">
-                    {stock.isStarred ? <span className="star">★</span> : <span className="star">☆</span>}
-                    {index + 1} {stock.name}
+                    {stock.isStarred ? '★' : '☆'} {index + 1} {stock.name}
                   </span>
                   <span>{stock.ltp}</span>
                   <span>{stock.percent}</span>
                   <span>{stock.afterLOM}</span>
-                  <span>
-                  </span>
+                  <span></span>
                 </div>
               ))}
             </section>
@@ -133,14 +156,11 @@ const MomentumRadar = ({ onBack }) => {
               </div>
             </div>
 
-            <div className="lom-box alt">
-              <h3>2 DAY HIGH & LOW</h3>
-              <p>How to use ?</p>
-              <div className="btn-group">
-                <button className="btn-up">Up</button>
-                <button className="btn-down">Down</button>
-              </div>
-            </div>
+            <div className="spike-section">
+          <h4>2 DAY HIGH & LOW</h4>
+          <button className="btn green-btn">UP</button>
+          <button className="btn red-btn">DOWN</button>
+        </div>
 
             <section className="table-container alt">
               <div className="table-head">
@@ -153,14 +173,12 @@ const MomentumRadar = ({ onBack }) => {
               {data.map((stock, index) => (
                 <div key={index} className={`table-row ${stock.isStarred ? 'highlight' : ''}`}>
                   <span className="logo-cell">
-                    {stock.isStarred ? <span className="star">★</span> : <span className="star">☆</span>}
-                    {index + 1} {stock.name}
+                    {stock.isStarred ? '★' : '☆'} {index + 1} {stock.name}
                   </span>
                   <span>{stock.ltp}</span>
                   <span>{stock.percent}</span>
                   <span>{stock.afterLOM}</span>
-                  
-                   
+                  <span></span>
                 </div>
               ))}
             </section>

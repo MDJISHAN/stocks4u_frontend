@@ -90,11 +90,10 @@
 }
 
 .toggle-design-btn {
-  padding: 0.6rem 1.5rem;
+  padding: 1rem 1.5rem;
   font-size: 0.95rem;
   font-weight: 600;
   color: #fff;
-  background: #6236ff;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -112,6 +111,7 @@
   align-items: center;
   margin-bottom: 1.5rem;
     margin-left: 2rem;
+    margin-top: 2rem;
 }
 
 .filter-buttons {
@@ -120,7 +120,10 @@
   align-items: center;
     margin-right: 2rem;
 }
-
+.spike-section{
+  margin-left: 1.5rem;
+  align-items: center;
+}
 .filter-btn {
   background: #1f1f3a;
   color: #aaa;
@@ -149,6 +152,30 @@
   margin-right: 95rem;
   margin-left: 1.2rem;
 
+}
+.extra-btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.custom-page {
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.custom-page h2 {
+  font-size: 1.8rem;
+  color: #8B5CF6;
+  margin-bottom: 1rem;
+}
+
+.custom-page p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 2rem;
 }
 
 .lom-box h3 {
@@ -195,6 +222,7 @@
   border: 1px solid #2f2f50;
   background-color: #161633;
   overflow-x: auto;
+  margin-top: 4.5rem;
 }
 
 .table-head,

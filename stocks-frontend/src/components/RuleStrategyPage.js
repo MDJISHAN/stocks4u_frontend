@@ -100,106 +100,31 @@ const RuleStrategyPage = ({ onBack }) => {
       {/* Main Content */}
       <main className="rule-strategy-main">
         <div className="rule-strategy-container">
-          <div className="rule-strategy-title">
-            <h1>3% Rule Strategy</h1>
-            <div className="rule-strategy-info">
-              <span className="info-icon">🎯</span>
-              <span className="info-text">Risk-managed trading strategy</span>
+         
+    <div className="momentum-header-bar">
+              <h1>Momentum Radar</h1>
+              <div className="filter-buttons">
+                <h3>Filter By: </h3>
+                <button className="filter-btn"> F&O Stocks</button>
+                <button className="filter-btn active">All Stocks</button>
+              </div>
             </div>
-          </div>
-
           {/* Tabs */}
-          <div className="rule-strategy-tabs">
-            {tabs.map(tab => (
-              <button
-                key={tab}
-                className={`tab-btn ${activeTab === tab ? 'active' : ''}`}
-                onClick={() => setActiveTab(tab)}
-              >
-                {tab}
-              </button>
-            ))}
-          </div>
+        
 
           {/* Strategy Rules */}
-          <div className="strategy-rules">
-            <div className="rules-card">
-              <h3>3% Rule Strategy Guidelines</h3>
-              <div className="rules-grid">
-                <div className="rule-item">
-                  <div className="rule-icon">📊</div>
-                  <div className="rule-title">Entry Rule</div>
-                  <div className="rule-desc">Enter when price breaks above resistance with 3% risk</div>
-                </div>
-                <div className="rule-item">
-                  <div className="rule-icon">🛡️</div>
-                  <div className="rule-title">Stop Loss</div>
-                  <div className="rule-desc">Set stop loss at 3% below entry price</div>
-                </div>
-                <div className="rule-item">
-                  <div className="rule-icon">🎯</div>
-                  <div className="rule-title">Target</div>
-                  <div className="rule-desc">Minimum 1:2 risk-reward ratio</div>
-                </div>
-                <div className="rule-item">
-                  <div className="rule-icon">⚖️</div>
-                  <div className="rule-title">Position Size</div>
-                  <div className="rule-desc">Risk max 3% of portfolio per trade</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
+         <div className="spike-section">
+          <h4>3% RULE STATERGY</h4>
+          <button className="btn green-btn">UP</button>
+          <button className="btn red-btn">DOWN</button>
+        </div>
           {/* Controls */}
-          <div className="rule-strategy-controls">
-            <div className="filter-section">
-              <label>Filter By:</label>
-              <select 
-                value={filterBy} 
-                onChange={(e) => setFilterBy(e.target.value)}
-                className="filter-select"
-              >
-                {filterOptions.map(option => (
-                  <option key={option} value={option}>{option}</option>
-                ))}
-              </select>
-            </div>
+         
             
-            <div className="action-buttons">
-              <button className="action-btn screener">Screen</button>
-              <button className="action-btn export">Export</button>
-              <button className="action-btn backtest">Backtest</button>
-            </div>
-          </div>
+            
+      
 
-          {/* Strategy Summary */}
-          <div className="rule-strategy-summary">
-            <div className="summary-card">
-              <h3>Strategy Performance</h3>
-              <div className="summary-stats">
-                <div className="stat-item">
-                  <span className="stat-icon">📈</span>
-                  <span className="stat-label">Active Trades</span>
-                  <span className="stat-value positive">8</span>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-icon">🎯</span>
-                  <span className="stat-label">Win Rate</span>
-                  <span className="stat-value positive">72%</span>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-icon">💰</span>
-                  <span className="stat-label">Total P&L</span>
-                  <span className="stat-value positive">+₹45,680</span>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-icon">⚖️</span>
-                  <span className="stat-label">Avg R:R</span>
-                  <span className="stat-value">1:2.1</span>
-                </div>
-              </div>
-            </div>
-          </div>
+      
 
           {/* Stock Table */}
           <div className="rule-strategy-table-container">
@@ -264,64 +189,9 @@ const RuleStrategyPage = ({ onBack }) => {
           </div>
 
           {/* Strategy Analysis */}
-          <div className="strategy-analysis">
-            <div className="analysis-card">
-              <h3>Strategy Analysis</h3>
-              <div className="analysis-grid">
-                <div className="analysis-item">
-                  <div className="analysis-label">Max Drawdown</div>
-                  <div className="analysis-value negative">-8.5%</div>
-                  <div className="analysis-percentage">Within limit</div>
-                </div>
-                <div className="analysis-item">
-                  <div className="analysis-label">Profit Factor</div>
-                  <div className="analysis-value positive">2.4</div>
-                  <div className="analysis-percentage">Excellent</div>
-                </div>
-                <div className="analysis-item">
-                  <div className="analysis-label">Sharpe Ratio</div>
-                  <div className="analysis-value positive">1.8</div>
-                  <div className="analysis-percentage">Good</div>
-                </div>
-                <div className="analysis-item">
-                  <div className="analysis-label">Max Risk</div>
-                  <div className="analysis-value">3.0%</div>
-                  <div className="analysis-percentage">Per trade</div>
-                </div>
-              </div>
-            </div>
-          </div>
+          
 
-          {/* Trading Rules */}
-          <div className="trading-rules">
-            <div className="rules-card">
-              <h3>Trading Rules Checklist</h3>
-              <div className="rules-list">
-                <div className="rule-checklist">
-                  <div className="check-item">
-                    <span className="check-icon">✅</span>
-                    <span className="check-text">Never risk more than 3% of capital per trade</span>
-                  </div>
-                  <div className="check-item">
-                    <span className="check-icon">✅</span>
-                    <span className="check-text">Always set stop loss before entering trade</span>
-                  </div>
-                  <div className="check-item">
-                    <span className="check-icon">✅</span>
-                    <span className="check-text">Maintain minimum 1:2 risk-reward ratio</span>
-                  </div>
-                  <div className="check-item">
-                    <span className="check-icon">✅</span>
-                    <span className="check-text">Exit trade if stop loss is hit</span>
-                  </div>
-                  <div className="check-item">
-                    <span className="check-icon">✅</span>
-                    <span className="check-text">Book profits at target levels</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+ 
         </div>
       </main>
     </div>

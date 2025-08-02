@@ -3,7 +3,7 @@ import MainPage from './components/MainPage';
 import Dashboard from './components/Dashboard';
 import WatchlistPage from './components/WatchlistPage';
 import HighLowPage from './components/HighLowPage';
-import MomentumSpikePage from './components/MomentumSpikePage';
+//import MomentumSpikePage from './components/MomentumSpikePage';
 import RuleStrategyPage from './components/RuleStrategyPage';
 import IndexMoverPage from './components/IndexMoverPage';
 import NiftyItPage from './components/NiftyItPage';
@@ -62,10 +62,7 @@ function App() {
         return <HighLowPage 
           onBack={() => setCurrentPage('dashboard')} 
         />;
-      case 'momentum':
-        return <MomentumSpikePage 
-          onBack={() => setCurrentPage('dashboard')} 
-        />;
+      
       case 'rule-strategy':
         return <RuleStrategyPage 
           onBack={() => setCurrentPage('dashboard')} 
