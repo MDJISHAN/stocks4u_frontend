@@ -1,0 +1,181 @@
+/* intraday-scan.css */
+.intraday-page {
+  background-color: #0e0e0e;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.intraday-header {
+  background-color: #111;
+  padding: 1.4rem;
+  border-bottom: 1px solid #2e2e2e;
+}
+
+.intraday-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.intraday-logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.intraday-logo-icon {
+  margin-right: 8px;
+}
+
+.intraday-search input {
+  background-color: #1c1c1c;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 6px 12px;
+  color: white;
+  width: 350px;
+  height: 40px;
+}
+
+.intraday-user button {
+  background-color: #5b5ee0;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.Intraday-buttons:hover{
+      background-color: #5b5ee0;
+
+}
+/* Page Title */
+.intraday-top.page-title {
+  padding: 1rem;
+  text-align: center;
+}
+
+#h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.info-icon {
+  font-size: 1rem;
+}
+
+/* Categories */
+.categories {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.categories button {
+  padding: 20px 25px;
+  border: 1px solid #888;
+  border-radius: 12px;
+  background: #1c1c1c;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 15px;
+}
+
+.categories button.active {
+  background: linear-gradient(to right, #7e3ff2, #a54dff);
+  color: #fff;
+  border: none;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.7rem;
+   margin-left: 18px;
+}
+
+.filters button {
+  padding: 6px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.bullish {
+  background-color: #00c46a;
+  color: white;
+}
+
+.bearish {
+  background-color: #ff2f4c;
+  color: white;
+}
+
+/* Table */
+.intraday-table-container {
+  padding: 0 1rem 2rem;
+}
+
+
+
+.table-row {
+  background-color: #121212;
+  
+}
+
+.table-row:nth-child(even) {
+  background-color: #151515;
+
+
+
+}
+
+.table-row:hover {
+  background-color: #1f1f1f;
+}
+
+/* Chart styling */
+.chart-cell {
+  width: 100%;
+  max-width: 150px;
+
+}
+
+.loading, .error-message {
+  color: #ccc;
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .table-header, .table-row {
+    grid-template-columns: 50px 80px 100px 100px;
+    font-size: 0.9rem;
+  }
+
+  .intraday-search input {
+    width: 160px;
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+  }
+
+  .categories button {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+}

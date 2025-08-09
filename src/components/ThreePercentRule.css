@@ -1,0 +1,78 @@
+.three-percent-wrapper {
+  background: #0b0b0f;
+  padding: 2rem;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.filter-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.strategy-btn {
+  background: #151520;
+  border: 1px solid #777;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.filter-toggle button {
+  background: #1f1f2e;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.table-wrapper {
+  margin-top: 2rem;
+  background: #1a1a28;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.ranking-label {
+  color: red;
+  text-align: right;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+}
+
+th, td {
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.green {
+  color: #00ff90;
+}
+
+.red {
+  color: #ff006e;
+}
+
+.trend-chart {
+  width: 60px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.trend-chart.up {
+  background: linear-gradient(to right, #00ff90, #007f4f);
+}
+
+.trend-chart.down {
+  background: linear-gradient(to right, #ff006e, #7f0033);
+}
