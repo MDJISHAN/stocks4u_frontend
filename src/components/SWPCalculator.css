@@ -1,0 +1,208 @@
+/* SWPCalculator.css -- dark theme to match your design */
+
+.swp-page {
+  background: #070707; /* page-level black */
+  padding: 28px 16px 80px;
+  color: #e6e6e6;
+  min-height: 100vh;
+  font-family: "Poppins", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* center container */
+.swp-inner.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  margin-top:4rem
+}
+
+/* Title + description */
+.swp-title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 32px;
+  margin: 6px 0 10px;
+}
+
+.swp-desc {
+  color: #bbbbbb;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 28px;
+  max-width: 1100px;
+}
+
+/* two-column grid */
+.swp-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+/* Card shared styles */
+.swp-card {
+  background: transparent;
+  border-radius: 14px;
+  padding: 26px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: none;
+  min-height: 420px;
+}
+
+/* headings */
+.card-heading {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+/* Amount input big rounded box */
+.amount-box {
+  margin-bottom: 22px;
+}
+
+.amount-input {
+  width: 100%;
+  height: 72px;
+  border-radius: 12px;
+  padding: 18px 20px;
+  font-size: 16px;
+  color: #fff;
+  background: #0b0b0b;
+  border: 2px solid rgba(138, 59, 255, 0.18); /* subtle purple outline */
+  outline: none;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/* Controls (label + slider) */
+.control {
+  margin-top: 18px;
+}
+
+.control-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #cfcfcf;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.control-value {
+  color: #9f6eff; /* purple value */
+  font-weight: 600;
+}
+
+/* Range input styling (cross-browser) */
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.04);
+  outline: none;
+  margin-bottom: 8px;
+}
+
+/* track for WebKit */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 8px;
+  border-radius: 6px;
+}
+
+/* thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 3px solid #6e2cff;
+  margin-top: -4px;
+  cursor: pointer;
+  box-shadow: 0 0 0 4px rgba(110,44,255,0.06);
+}
+
+/* Firefox */
+input[type="range"]::-moz-range-track {
+  height: 8px;
+  border-radius: 6px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 3px solid #6e2cff;
+  cursor: pointer;
+}
+
+/* min / max labels under sliders */
+.minmax {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #9e9e9e;
+  margin-top: 6px;
+}
+
+/* RIGHT card results */
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.result-block {
+  width: 100%;
+  padding: 22px 10px;
+  margin: 10px 0;
+}
+
+.result-label {
+  color: #cfcfcf;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.result-value {
+  color: #8f3fff; /* strong purple */
+  font-weight: 800;
+  font-size: 44px;
+  letter-spacing: 1px;
+}
+
+/* smaller screens */
+@media (max-width: 980px) {
+  .swp-grid {
+    grid-template-columns: 1fr;
+  }
+  .swp-card {
+    min-height: auto;
+  }
+  .result-value {
+    font-size: 40px;
+  }
+}
+
+/* very small screens - touch friendly spacing */
+@media (max-width: 480px) {
+  .swp-title {
+    font-size: 20px;
+  }
+  .amount-input {
+    height: 64px;
+    padding: 14px;
+  }
+  .result-value {
+    font-size: 34px;
+  }
+  .swp-inner.container {
+    padding: 0 8px;
+  }
+}

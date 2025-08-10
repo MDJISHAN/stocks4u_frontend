@@ -1,0 +1,313 @@
+/* SPOTLIGHT PAGE BACKGROUND */
+.momentum-radar-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.05) 0%, rgba(18,16,29,1) 40%, #0a0a0a 100%) !important;
+  font-family: 'Inter', sans-serif;
+  color: white;
+}
+
+/* HEADER BAR - KEEPING FROM ORIGINAL */
+.momentum-header {
+  background: #0a0a0a;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.momentum-header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.momentum-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.momentum-logo-icon {
+  font-size: 1.5rem;
+}
+
+.momentum-logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.momentum-search {
+  flex: 1;
+  max-width: 400px;
+  margin: 0 2rem;
+}
+
+.momentum-search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: white;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.momentum-search-input:focus {
+  border-color: #8B5CF6;
+}
+
+.momentum-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.momentum-back-btn {
+  padding: 0.6rem 1.5rem;
+  background: transparent;
+  color: #8B5CF6;
+  border: 2px solid #8B5CF6;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.momentum-back-btn:hover {
+  background: #8B5CF6;
+  color: white;
+}
+
+/* TOGGLE BUTTON */
+.toggle-design-btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.toggle-design-btn {
+  padding: 1rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-design-btn:hover {
+  background: #7c56ff;
+}
+
+/* HEADER AREA */
+.momentum-header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+    margin-right: 2rem;
+}
+.spike-section{
+  margin-left: 1.5rem;
+  align-items: center;
+}
+.filter-btn {
+  background: #1f1f3a;
+  color: #aaa;
+  border: 1px solid #333;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.filter-btn.active {
+  background: #6236ff;
+  color: #fff;
+  border-color: #6236ff;
+}
+
+/* LOM Box */
+.lom-box,
+.lom-box.alt {
+  background: #181836;
+  border: 1px solid #2f2f50;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  margin-right: 95rem;
+  margin-left: 1.2rem;
+
+}
+.extra-btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.custom-page {
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.custom-page h2 {
+  font-size: 1.8rem;
+  color: #8B5CF6;
+  margin-bottom: 1rem;
+}
+
+.custom-page p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.lom-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.lom-box p {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-up,
+.btn-down {
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  color: white;
+ 
+
+}
+
+.btn-up {
+  background-color: #10b981;
+}
+
+.btn-down {
+  background-color: #ef4444;
+}
+
+/* TABLE */
+.table-container,
+.table-container.alt {
+  border-radius: 10px;
+  border: 1px solid #2f2f50;
+  background-color: #161633;
+  overflow-x: auto;
+  margin-top: 4.5rem;
+}
+
+.table-head,
+.table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  padding: 1rem;
+  align-items: center;
+  border-bottom: 1px solid #2e2e4d;
+}
+
+.table-head {
+  background: #20204a;
+  font-weight: 600;
+  color: #ccc;
+}
+
+.table-row {
+  transition: background 0.3s;
+}
+
+.table-row:hover {
+  background: #252553;
+}
+
+.highlight {
+  background-color: #292963;
+}
+
+.logo-cell {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.star {
+  color: #facc15;
+  font-size: 1rem;
+}
+
+.mini-chart {
+  width: 40px;
+  height: 20px;
+  border-radius: 4px;
+  background: #444;
+  position: relative;
+}
+
+.mini-chart.up {
+  background: linear-gradient(to top, #10b98188, transparent);
+}
+
+.mini-chart.down {
+  background: linear-gradient(to bottom, #ef444488, transparent);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .momentum-header-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .table-head,
+  .table-row {
+    grid-template-columns: 1fr;
+    display: block;
+  }
+
+  .table-head span,
+  .table-row span {
+    display: block;
+    padding: 0.3rem 0;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .momentum-header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
