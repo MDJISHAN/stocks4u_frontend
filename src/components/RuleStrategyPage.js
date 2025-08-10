@@ -76,8 +76,14 @@ const RuleStrategyPage = ({ onBack }) => {
       {/* Header */}
       <header className="rule-strategy-header">
         <div className="rule-strategy-header-container">
+<<<<<<< HEAD
           <div className="logo">
           <img src="images/Final Font Stocks4U1.png" className="logo-text" />
+=======
+          <div className="rule-strategy-logo">
+            <span className="rule-strategy-logo-icon">🎯</span>
+            <span className="rule-strategy-logo-text">stocks4u</span>
+>>>>>>> 3fa6b625b19d922458b7a7ae2a457254c26ee838
           </div>
           
           <div className="rule-strategy-search">

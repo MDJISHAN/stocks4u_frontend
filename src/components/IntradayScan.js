@@ -95,8 +95,14 @@ return (
 {/* Header */}
 <header className="intraday-header">
 <div className="intraday-header-container">
+<<<<<<< HEAD
 <div className="logo">
           <img src="images/Final Font Stocks4U1.png" className="logo-text" />
+=======
+<div className="intraday-logo">
+<span className="intraday-logo-icon">📈</span>
+<span className="intraday-logo-text">stocks4u</span>
+>>>>>>> 3fa6b625b19d922458b7a7ae2a457254c26ee838
 </div>
 <div className="intraday-search">
 <input type="text" placeholder="Search Company" />

@@ -221,9 +221,15 @@ const Dashboard = ({ onLogout, onWatchlistClick, onHighLowClick, onMomentumClick
       {/* Header */}
       <header className="dashboard-header">
         <div className="dashboard-header-container">
+<<<<<<< HEAD
           <div className="logo">
           <img src="images/Final Font Stocks4U1.png" className="logo-text" />
 
+=======
+          <div className="dashboard-logo">
+            <span className="logo-icon">📈</span>
+            <span className="logo-text">stocks4u</span>
+>>>>>>> 3fa6b625b19d922458b7a7ae2a457254c26ee838
           </div>
           
           <form className="dashboard-search" onSubmit={handleSearch}>
@@ -399,7 +405,34 @@ const Dashboard = ({ onLogout, onWatchlistClick, onHighLowClick, onMomentumClick
             </div>
           </div>
           
+<<<<<<< HEAD
 
+=======
+          <div className="footer-table">
+            <div className="table-header">
+              <div className="table-title">Header Text</div>
+              <div className="table-title">Header Text</div>
+              <div className="table-title">Header Text</div>
+            </div>
+            <div className="table-rows">
+              <div className="table-row">
+                <div className="table-cell">Content</div>
+                <div className="table-cell">Content</div>
+                <div className="table-cell">Content</div>
+              </div>
+              <div className="table-row">
+                <div className="table-cell">Content</div>
+                <div className="table-cell">Content</div>
+                <div className="table-cell">Content</div>
+              </div>
+              <div className="table-row">
+                <div className="table-cell">Content</div>
+                <div className="table-cell">Content</div>
+                <div className="table-cell">Content</div>
+              </div>
+            </div>
+          </div>
+>>>>>>> 3fa6b625b19d922458b7a7ae2a457254c26ee838
           
           <div className="footer-bottom">
             <div className="footer-copyright">

@@ -59,8 +59,14 @@ export default function SWPCalculator({ onBack }) {
     <div className="swp-page">
       <header className="heatmap-header">
         <div className="heatmap-header-container">
+<<<<<<< HEAD
           <div className="logo">
           <img src="images/Final Font Stocks4U1.png" className="logo-text" />
+=======
+          <div className="heatmap-logo">
+            <span className="heatmap-logo-icon">📈</span>
+            <span className="heatmap-logo-text">stocks4u</span>
+>>>>>>> 3fa6b625b19d922458b7a7ae2a457254c26ee838
           </div>
           
           <div className="heatmap-search">
