@@ -32,21 +32,13 @@ const MainPage = ({ onSuccessfulLogin }) => {
       <header className="header">
         <div className="header-container">
           <div className="logo">
-<<<<<<< HEAD
                 <img src="images/Final Font Stocks4U1.png" className="logo-text" />
-=======
-            <span className="logo-text">S4U</span>
->>>>>>> 3fa6b625b19d922458b7a7ae2a457254c26ee838
           </div>
           
           <nav className={`nav ${isMobileMenuOpen ? 'nav-open' : ''}`}>
             <a href="#home">Home</a>
             <a href="#features">Features</a>
             <a href="#pricing">Pricing</a>
-<<<<<<< HEAD
-=======
-            <a href="#tools">Tools</a>
->>>>>>> 3fa6b625b19d922458b7a7ae2a457254c26ee838
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
           </nav>
@@ -115,11 +107,7 @@ const MainPage = ({ onSuccessfulLogin }) => {
             <div className="introducing-text">
               <h2>Introducing</h2>
               <h3>Advanced Trading Platform</h3>
-<<<<<<< HEAD
               <p style={{marginLeft:'5rem'}}>Experience the future of trading with our cutting-edge platform designed for both beginners and professionals. Get real-time market data, advanced analytics, and seamless trading experience all in one place.</p>
-=======
-              <p>Experience the future of trading with our cutting-edge platform designed for both beginners and professionals. Get real-time market data, advanced analytics, and seamless trading experience all in one place.</p>
->>>>>>> 3fa6b625b19d922458b7a7ae2a457254c26ee838
               
               <div className="features-grid">
                 <div className="feature-item">
@@ -157,18 +145,6 @@ const MainPage = ({ onSuccessfulLogin }) => {
       </section>
 
       {/* Real Time Sector Data */}
-<<<<<<< HEAD
-
-=======
-      <section className="real-time-sector">
-        <div className="container">
-          <h2>Real Time Sector Data</h2>
-          <p>Live sector performance and market movements</p>
-          
-
-        </div>
-      </section>
->>>>>>> 3fa6b625b19d922458b7a7ae2a457254c26ee838
 
       {/* Index Mover Section */}
       <section className="index-mover">
@@ -233,20 +209,12 @@ const MainPage = ({ onSuccessfulLogin }) => {
               </div>
             </div>
           </section>
-<<<<<<< HEAD
            <div className="section-divider"> </div>
-=======
-           <div className="section-divider">CTA</div>
->>>>>>> 3fa6b625b19d922458b7a7ae2a457254c26ee838
 
           {/* REPLACED CARD GRID SECTION */}
           <div className="card-grid">
             <div className="card">
-<<<<<<< HEAD
               <img src="/images/sip calculator.png" alt="SIP Calculator" className="card-icon" />
-=======
-              <img src="/images/image-removebg-preview.png" alt="SIP Calculator" className="card-icon" />
->>>>>>> 3fa6b625b19d922458b7a7ae2a457254c26ee838
               <h3>SIP & SWP Calculator</h3>
               <p>Description</p>
             </div>

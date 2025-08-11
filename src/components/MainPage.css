@@ -19,7 +19,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-<<<<<<< HEAD
   padding: 0 0.6 rem;
   position: relative;
   gap:10rem;
@@ -29,13 +28,6 @@
 width: 180px;
   height: 40px;
 }
-=======
-  padding: 0 2rem;
-  position: relative;
-  gap:10rem;
-}
-
->>>>>>> 3fa6b625b19d922458b7a7ae2a457254c26ee838
 
 .oil-info {
   display: flex;
@@ -117,7 +109,6 @@ width: 180px;
 }
 
 .card-icon {
-<<<<<<< HEAD
   width: 280px;
   height: auto;
   margin-top: 6rem;
@@ -134,43 +125,16 @@ width: 180px;
 .dairy-image {
   width: 100%;           /* Responsive full width */
   max-width: 270px;      /* ⬆️ Increase this to make image larger */
-=======
-  width: 160px;
-  height: auto;
-  margin-bottom: 3.7rem;
-  margin-top: 6rem;
-}
-.sector-data {
-  width: 240%;           /* Responsive full width */
-  max-width: 530px;      /* ⬆️ Increase this to make image larger */
-  height: auto;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto; 
-  margin-top: 30px;       /* Optional: center the image */
-}
-.dairy-image {
-  width: 100%;           /* Responsive full width */
-  max-width: 300px;      /* ⬆️ Increase this to make image larger */
->>>>>>> 3fa6b625b19d922458b7a7ae2a457254c26ee838
   height: auto;
   object-fit: contain;
   display: block;
   margin: 0 auto;  
-<<<<<<< HEAD
   margin-top: 3.7rem;
-=======
-  margin-top: 2.8rem;      /* Optional: center the image */
->>>>>>> 3fa6b625b19d922458b7a7ae2a457254c26ee838
 }
 .card h3 {
   font-size: 1.2rem;
   font-weight: 700;
-<<<<<<< HEAD
   margin-top: 0.1rem;
-=======
-  margin-bottom: 0.5rem;
->>>>>>> 3fa6b625b19d922458b7a7ae2a457254c26ee838
 }
 
 .card p {
@@ -213,17 +177,9 @@ width: 180px;
 }
 
 .logo {
-<<<<<<< HEAD
 
 width: 180px;
   height: 40px;
-=======
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #8B5CF6;
-  z-index: 100;
-
->>>>>>> 3fa6b625b19d922458b7a7ae2a457254c26ee838
 }
 
 .nav {
@@ -391,11 +347,7 @@ width: 180px;
   transition: transform 0.3s ease;
 }
 .phone1 {
-<<<<<<< HEAD
   margin-left: 29.8rem;
-=======
-  margin-left: 34rem;
->>>>>>> 3fa6b625b19d922458b7a7ae2a457254c26ee838
   margin-bottom: 4rem;
   width: 495px;
   height: 330px;
@@ -784,11 +736,7 @@ width: 180px;
 /* Introducing Section */
 .introducing {
   background: linear-gradient(135deg, #0a0a0a, #1a1a2e);
-<<<<<<< HEAD
   padding: 2rem 20rem;
-=======
-  padding: 2rem 22rem;
->>>>>>> 3fa6b625b19d922458b7a7ae2a457254c26ee838
 
 }
 

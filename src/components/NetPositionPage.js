@@ -69,14 +69,8 @@ const NetPositionPage = ({ onBack }) => {
       {/* Header */}
       <header className="net-position-header">
         <div className="net-position-header-container">
-<<<<<<< HEAD
           <div className="logo">
           <img src="images/Final Font Stocks4U1.png" className="logo-text" />
-=======
-          <div className="net-position-logo">
-            <span className="net-position-logo-icon">💼</span>
-            <span className="net-position-logo-text">stocks4u</span>
->>>>>>> 3fa6b625b19d922458b7a7ae2a457254c26ee838
           </div>
           
           <div className="net-position-search">

@@ -71,12 +71,7 @@ const SectorRotation = ({ onBack }) => {
       <header className="header">
         <div className="header-container">
           <div className="logo">
-<<<<<<< HEAD
           <img src="images/Final Font Stocks4U1.png" className="logo-text" />
-=======
-            <span className="logo-icon">📈</span>
-            <span className="logo-text">stocks4u</span>
->>>>>>> 3fa6b625b19d922458b7a7ae2a457254c26ee838
           </div>
           <div className="search-container">
             <input type="text" placeholder="Search markets" className="search-input" />

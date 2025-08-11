@@ -29,14 +29,8 @@ const DistributionPage = ({ onBack }) => {
       {/* Header */}
       <header className="distribution-header">
         <div className="distribution-header-container">
-<<<<<<< HEAD
           <div className="logo">
           <img src="images/Final Font Stocks4U1.png" className="logo-text" />
-=======
-          <div className="distribution-logo">
-            <span className="distribution-logo-icon">📊</span>
-            <span className="distribution-logo-text">stocks4u</span>
->>>>>>> 3fa6b625b19d922458b7a7ae2a457254c26ee838
           </div>
           
           <div className="distribution-search">

@@ -59,14 +59,8 @@ const WatchlistPage = ({ onBack }) => {
     <div className="watchlist-page">
       <header className="watchlist-header">
         <div className="watchlist-header-container">
-<<<<<<< HEAD
           <div className="logo">
           <img src="images/Final Font Stocks4U1.png" className="logo-text" />
-=======
-          <div className="watchlist-logo">
-            <span className="watchlist-logo-icon">⭐</span>
-            <span className="watchlist-logo-text">stocks4u</span>
->>>>>>> 3fa6b625b19d922458b7a7ae2a457254c26ee838
           </div>
           
           <div className="watchlist-search">
