@@ -16,7 +16,7 @@ const SectorRotation = ({ onBack }) => {
     setLoading(true);
     setError('');
     try {
-      const response = await fetch(`http://127.0.0.1:5000/api/sector-abnormal-growth?sector=Auto`);
+      const response = await fetch(`http://31.97.232.39:5000/api/sector-abnormal-growth?sector=Auto`);
       const data = await response.json();
 
       const ranked = data?.ranked_stocks || [];
