@@ -37,7 +37,7 @@ const [ShowVolume, setShowVolume] = useState(false);
 const fetchTurnoverStocks = async () => {
 setLoading(true);
 try {
-const res = await fetch('http://31.97.232.39:5000/high-turnover-stocks?top=10');
+const res = await fetch('https://stocks4u-project-o06q.onrender.com/high-turnover-stocks?top=10');
 const data = await res.json();
   const formatted = [...(data.fo_stocks || []), ...(data.non_fo_stocks || [])].map((stock, index) => {
     const turnoverCr = stock.turnover / 1e7;
