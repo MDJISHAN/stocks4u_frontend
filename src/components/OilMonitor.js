@@ -9,7 +9,7 @@ const OilMonitor = ({ onBack }) => {
    const [activeTab, setActiveTab] = useState('main');
 
   useEffect(() => {
-    fetch('http://31.97.232.39:5000/api/oi') // Replace with your actual backend URL
+    fetch('https://stocks4u-project-o06q.onrender.com/api/oi') // Replace with your actual backend URL
       .then(response => response.json())
       .then(data => {
         const merged = mergeOI(data.data[0]);
