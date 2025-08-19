@@ -156,19 +156,22 @@ const SectorRotation = ({ onBack }) => {
                 <div className="header-cell">R-factor</div>
                 <div className="header-cell">Index chart</div>
               </div>
-              {stockData.map((stock, index) => (
+                {stockData.map((stock, index) => (
                 <div key={index} className="table-row">
-                <div className="data-cell">{stock.symbol}</div>
-                  <div className="data-celll">+{stock.change}%</div>
-                  <div className="data-celll">{stock.volatility}</div>
-                  <div className="data-celll">{(stock.volume / 1000).toFixed(0)}K</div>
-                  <div className="data-celll">{stock.z_score}</div>
+                  <div className="data-cell">{stock.symbol}</div>
+                  <div className="data-celll">{stock.change.toFixed(2)}%</div>
+                  <div className="data-celll">{stock.data_points}</div> 
+                  <div className="data-celll">{stock.volatility.toFixed(2)}</div>
+                  <div className="data-celll">{stock.z_score.toFixed(2)}</div>
                   <div className="data-celll"><span className="rank-badge">{stock.rank}</span></div>
                   <div className="data-cell">
-                    <button className={`action-button ${stock.action === 'BUY' ? 'buy' : 'sell'}`}>{stock.action}</button>
+                    <button className={`action-button ${stock.action === 'BUY' ? 'buy' : 'sell'}`}>
+                      {stock.action}
+                    </button>
                   </div>
                 </div>
               ))}
+
             </div>
           </div>
 
