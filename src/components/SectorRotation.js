@@ -23,9 +23,12 @@ const SectorRotation = ({ onBack }) => {
       const abnormal = data?.abnormal_growth_stocks || [];
       const stats = data?.sector_stats || {};
 
-      if (ranked.length === 0 || abnormal.length === 0) {
-        setError('No data available for this sector.');
-      }
+     if (ranked.length === 0 && abnormal.length === 0) {
+  setError('No data available for this sector.');
+} else {
+  setError('');
+}
+
 
       const formattedChart = ranked.map(stock => ({
         name: stock.symbol,
